@@ -48,7 +48,19 @@
 # FZF
 ---
 <!-- fg=blue bg=black -->
+# GIT
+---
+<!-- fg=blue bg=black -->
 # Vim Distributions
+
+---
+<!-- fg=blue bg=black -->
+# Edit FAST
+
+---
+<!-- fg=blue bg=black -->
+# TMUX
+# (not vim)
 
 ---
 <!-- effect=explosions -->
