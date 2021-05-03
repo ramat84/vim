@@ -28,6 +28,29 @@
 ![RC](vim/well.png)
 
 ---
+<!-- fg=blue bg=black -->
+# Versions
+## VI - Really Retro
+## VIM - VI Explosion
+## NeoVIM - For Hipsters
+
+---
+<!-- fg=blue bg=black -->
+# Cool Plugins
+---
+<!-- fg=blue bg=black -->
+# NerdTree
+---
+<!-- fg=blue bg=black -->
+# CoC
+---
+<!-- fg=blue bg=black -->
+# FZF
+---
+<!-- fg=blue bg=black -->
+# Vim Distributions
+
+---
 <!-- effect=explosions -->
 # Thanks
 ![RC](vim/vcita_logo.png)
