@@ -58,7 +58,9 @@
 --- 
 <!-- fg=blue bg=black -->
 # FZF
---- 
+* Open
+* History
+---
 <!-- fg=blue bg=black -->
 # GIT
 --- 
@@ -72,7 +74,11 @@
 --- 
 <!-- fg=blue bg=black -->
 # TMUX
-# (not vim)
+## (not vim)
+* Split windows
+* Tabs
+* Navigate Quickly
+* Copy & Paste
 
 --- 
 <!-- effect=explosions -->
