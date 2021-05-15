@@ -6,15 +6,31 @@
 ## From hating to loving VIM
 ![RC](vim/mcvim.png)
 
+
+---
+<!-- fg=white bg=black -->
+### Working from Command line
+* VIM - IDE
+* TMUX - Window Manager
+* Bonus - Other terminal tools 
+---
+
+<!-- fg=green bg=black -->
+### Adventages
+* Everything is very quick
+* Works the same on any OS
+* Can be accessed remotely with ease
+* Easy to clone
+
 ---
 
 <!-- fg=blue bg=black -->
 # TMUX
-* Split windows
+* Sessions
 * Tabs
+* Split windows
 * Navigate Quickly
 * Copy & Paste
-* Sessions
 
 ---
 
