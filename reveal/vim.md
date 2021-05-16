@@ -7,6 +7,13 @@
 ![RC](vim/mcvim.png)
 
 ---
+<!-- fg=blue bg=black -->
+### Working from Command line
+* VIM - IDE
+* TMUX - Window Manager
+* Bonus - Other terminal tools 
+
+---
 
 <!-- fg=blue bg=black -->
 # TMUX
@@ -120,6 +127,8 @@
 <!-- fg=blue bg=black -->
 # More Resources
 * Pimp My Terminal
+* Oh My Bash/ZSH
+* lsd
 
 ---
 <!-- effect=explosions -->
