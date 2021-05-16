@@ -9,18 +9,17 @@
 ---
 
 <!-- fg=blue bg=black -->
-# TMUX
-* Split windows
-* Tabs
-* Navigate Quickly
-* Copy & Paste
-* Sessions
+# Install
+* Mac: brew install macvim --override-system-vim
+* Linux: apt/pacman/yum [install] gvim
+* Windows: Download and install gvim.exe
 
 ---
-
 <!-- fg=red bg=black -->
-# Chalanges
-* Too Basic
+<!-- Example: bash example/bare.sh -->
+
+# Out of the box
+## How most of us know vim
 * Pretty bare boned and ugly
 * No UI elements (numbers, file manager, tabs, etc...)
 * No Auto complete
@@ -49,10 +48,10 @@
 # Normal Mode
 * {G}, {gg}, {^}, {$} - Start/End
 * {f}, {t} - Jump to character 
-* {%}, {\*}, {⦄} - Jump
-* {w}, {b}, {e} - Words
-* {t} - Tag
-* {c}, {d} - Change, Delete | {a}, {i} - Outside, Inside
+* {%}, {✱}, {⦄} - Jump
+* {w}, {b}, {e}, {t} - Words, Tag
+* {c}, {d} - Change, Delete 
+* {a}, {i} - Outside, Inside
 
 ---
 
@@ -113,8 +112,19 @@
 
 ---
 <!-- fg=blue bg=black -->
-# Vim Distributions
+# How do I start
+* VIM tutor
 * Spacevim
+
+---
+
+<!-- fg=blue bg=black -->
+# TMUX
+* Split Windows
+* Tabs
+* Navigate Quickly
+* Copy & Paste
+* Sessions
 
 ---
 <!-- fg=blue bg=black -->
