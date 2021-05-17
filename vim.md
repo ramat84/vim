@@ -1,38 +1,63 @@
-<!-- theme: uncover -->
+<!-- Use reveal-md to show this presentation -->
 
-<!-- effect=fireworks -->
 ### VIM | Ram Matityahu
 # LoVIM . IT!
-## From hating to loving VIM
 ![RC](vim/mcvim.png)
 
+Note: In this lecture we'll take a technical dive into vim and learn how to work with it
 
 ---
-<!-- fg=white bg=black -->
-### Working from Command line
+
+### Work from the command line
 * VIM - IDE
 * TMUX - Window Manager
 * Bonus - Other terminal tools 
+
+Note: Vim - not an editor<br>Other tools like lazygit, if we have time
+
 ---
 
-<!-- fg=green bg=black -->
+# Notes
+* github.com/ramat84/vim (vim.md)
+* github.com/ramat84/config
+* Custom configuration, Stuff may vary
+* Colors might be off for you 
+
+Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
+
+---
+
 ### Adventages
 * Everything is very quick
 * Works the same on any OS
 * Can be accessed remotely with ease
-* Easy to clone
+* Actions are repeatable
+
+Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
 
 ---
 
-<!-- fg=blue bg=black -->
 # Install
 * Mac: brew install macvim --override-system-vim
 * Linux: apt/pacman/yum [install] gvim
 * Windows: Download and install gvim.exe
+* Android: In Termux app, "apt install vim"
+
+Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard
 
 ---
-<!-- fg=red bg=black -->
-<!-- Example: bash example/bare.sh -->
+
+# Basics
+* : - Go to vim command mode
+* q - quit
+* e - open file
+* w - write  (save/save as)
+
+Note: Ask me how to quit vim<br>ESC has another function<br>Open existing/new file
+
+---
+
+
 
 # Out of the box
 ## How most of us know vim
@@ -43,7 +68,6 @@
 
 ---
 
-<!-- fg=red bg=black -->
 # Chalanges
 ## Learning Curve
 
@@ -51,75 +75,86 @@
 
 ---
 
-<!-- fg=blue bg=black -->
-# Modes
+# Modal Editor
 ## Edit before insert
-* Normal
-* Insert
-* Visual
+* Normal - Manipulate code, Navigate Files
+* Insert - Insert code
+* Visual - Work visually with code
 
 ---
 
-<!-- fg=blue bg=black -->
 # Normal Mode
+## Steps
+* Number - how many times
+* Command 
+
+---
+
+# Normal Mode
+## Commands
+* {c} - Change
+* {d} - Delete 
+* {y} - Yank (copy)
+
+---
+
+# Normal Mode
+## Motions
 * {G}, {gg}, {^}, {$} - Start/End
 * {f}, {t} - Jump to character 
-* {%}, {✱}, {⦄} - Jump
+* {%}, {✱}, {⦄}, - Jump
 * {w}, {b}, {e}, {t} - Words, Tag
-* {c}, {d} - Change, Delete 
-* {a}, {i} - Outside, Inside
+* {'}, {"} - Parentesis
+* {a}, {i} - All, Inside
 
 ---
 
-<!-- effect=stars -->
 # Does Well
 ## Out of the box
-* Loads very quickly
-* Runs anywhere
-* Installed on all servers
-* Let you edit stuff quickly
+* Runs quickly
+* Runs everywhere
+* Make work more efficient
 
 ![RC](vim/well.png)
 
 ---
 
-<!-- fg=blue bg=black -->
-# Forks
-* VI - Really Retro
-* VIM - VI Explosion
-* NeoVIM - For Hipsters
+# Versions
+* VI - Really Retro (1976)
+* VIM - VI Explosion (1991)
+* NeoVIM - Vim For Hipsters (2014)
 
 ![RC](vim/fork.jpg)
 
 ---
 
-<!-- fg=blue bg=black -->
 # VIM Plugins
+* Modular and installed by demend
 * Extend functionality
+* Efficiency can be monitored
 
 ---
 
-<!-- fg=blue bg=black -->
 # NerdTree
 * File Manager
 * Bookmarks
 * File Manipulation
 
 ---
-<!-- fg=blue bg=black -->
+
 # CoC
 * Syntax Autocomplete 
 * Jump to definition
 
 ---
-<!-- fg=blue bg=black -->
+
 # FZF
 * Open
 * History
 * Grep
 
 ---
-<!-- fg=blue bg=black -->
+
 # GIT
 * Mark Changes
 * Blame
@@ -127,30 +162,28 @@
 * DiffConflicts 
 
 ---
-<!-- fg=blue bg=black -->
+
 # How do I start
 * VIM tutor
 * Spacevim
 
 ---
 
-<!-- fg=blue bg=black -->
 # TMUX
-* Split Windows
+* Sessions & attach
 * Tabs
-* Navigate Quickly
+* Split Windows
 * Copy & Paste
-* Sessions
 
 ---
-<!-- fg=blue bg=black -->
+
 # More Resources
 * Pimp My Terminal
 * Oh My Bash/ZSH
 * lsd
 
 ---
-<!-- effect=explosions -->
+
 # Thanks
 ![RC](vim/vcita_logo.png)
 

@@ -1,33 +1,61 @@
-<!-- theme: uncover -->
+<!-- Use reveal-md to show this presentation -->
 
-<!-- effect=fireworks -->
 ### VIM | Ram Matityahu
 # LoVIM . IT!
-## From hating to loving VIM
 ![RC](vim/mcvim.png)
 
+Note: In this lecture we'll take a technical dive into vim and learn how to work with it
+
 ---
-<!-- fg=blue bg=black -->
-### Working from Command line
+
+### Work from the command line
 * VIM - IDE
 * TMUX - Window Manager
 * Bonus - Other terminal tools 
 
----
-
-<!-- fg=blue bg=black -->
-# TMUX
-* Split windows
-* Tabs
-* Navigate Quickly
-* Copy & Paste
-* Sessions
+Note: Vim - not an editor<br>Other tools like lazygit, if we have time
 
 ---
 
-<!-- fg=red bg=black -->
-# Chalanges
-* Too Basic
+# Notes
+* github.com/ramat84/vim (vim.md)
+* github.com/ramat84/config
+* Custom configuration, Stuff may vary
+* Colors might be off for you 
+
+Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
+
+---
+
+### Adventages
+* Everything is very quick
+* Works the same on any OS
+* Can be accessed remotely with ease
+* Actions are repeatable
+
+Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
+
+---
+
+# Install
+* Mac: brew install macvim --override-system-vim
+* Linux: apt/pacman/yum [install] gvim
+* Windows: Download and install gvim.exe
+
+---
+
+# Basics
+* : - Go to vim command mode
+* q - quit
+* w - write  (save/save as)
+* e - open file
+
+---
+
+
+
+# Out of the box
+## How most of us know vim
 * Pretty bare boned and ugly
 * No UI elements (numbers, file manager, tabs, etc...)
 * No Auto complete
@@ -35,7 +63,6 @@
 
 ---
 
-<!-- fg=red bg=black -->
 # Chalanges
 ## Learning Curve
 
@@ -43,75 +70,86 @@
 
 ---
 
-<!-- fg=blue bg=black -->
-# Modes
+# Modal Editor
 ## Edit before insert
-* Normal
-* Insert
-* Visual
+* Normal - Manipulate code, Navigate Files
+* Insert - Insert code
+* Visual - Work visually with code
 
 ---
 
-<!-- fg=blue bg=black -->
 # Normal Mode
+## Steps
+* Number - how many times
+* Command 
+
+---
+
+# Normal Mode
+## Commands
+* <kbd>c</kbd> - Change
+* <kbd>d</kbd> - Delete 
+* <kbd>y</kbd> - Yank (copy)
+
+---
+
+# Normal Mode
+## Motions
 * <kbd>G</kbd>, <kbd>gg</kbd>, <kbd>^</kbd>, <kbd>$</kbd> - Start/End
 * <kbd>f</kbd>, <kbd>t</kbd> - Jump to character 
-* <kbd>%</kbd>, <kbd>\*</kbd>, <kbd>⦄</kbd> - Jump
-* <kbd>w</kbd>, <kbd>b</kbd>, <kbd>e</kbd> - Words
-* <kbd>t</kbd> - Tag
-* <kbd>c</kbd>, <kbd>d</kbd> - Change, Delete | <kbd>a</kbd>, <kbd>i</kbd> - Outside, Inside
+* <kbd>%</kbd>, <kbd>✱</kbd>, <kbd>⦄</kbd>, - Jump
+* <kbd>w</kbd>, <kbd>b</kbd>, <kbd>e</kbd>, <kbd>t</kbd> - Words, Tag
+* <kbd>'</kbd>, <kbd>"</kbd> - Parentesis
+* <kbd>a</kbd>, <kbd>i</kbd> - All, Inside
 
 ---
 
-<!-- effect=stars -->
 # Does Well
 ## Out of the box
-* Loads very quickly
-* Runs anywhere
-* Installed on all servers
-* Let you edit stuff quickly
+* Runs quickly
+* Runs everywhere
+* Make work more efficient
 
 ![RC](vim/well.png)
 
 ---
 
-<!-- fg=blue bg=black -->
-# Forks
-* VI - Really Retro
-* VIM - VI Explosion
-* NeoVIM - For Hipsters
+# Versions
+* VI - Really Retro (1976)
+* VIM - VI Explosion (1991)
+* NeoVIM - Vim For Hipsters (2014)
 
 ![RC](vim/fork.jpg)
 
 ---
 
-<!-- fg=blue bg=black -->
 # VIM Plugins
+* Modular and installed by demend
 * Extend functionality
+* Efficiency can be monitored
 
 ---
 
-<!-- fg=blue bg=black -->
 # NerdTree
 * File Manager
 * Bookmarks
 * File Manipulation
 
 ---
-<!-- fg=blue bg=black -->
+
 # CoC
 * Syntax Autocomplete 
 * Jump to definition
 
 ---
-<!-- fg=blue bg=black -->
+
 # FZF
 * Open
 * History
 * Grep
 
 ---
-<!-- fg=blue bg=black -->
+
 # GIT
 * Mark Changes
 * Blame
@@ -119,19 +157,28 @@
 * DiffConflicts 
 
 ---
-<!-- fg=blue bg=black -->
-# Vim Distributions
+
+# How do I start
+* VIM tutor
 * Spacevim
 
 ---
-<!-- fg=blue bg=black -->
+
+# TMUX
+* Sessions & attach
+* Tabs
+* Split Windows
+* Copy & Paste
+
+---
+
 # More Resources
 * Pimp My Terminal
 * Oh My Bash/ZSH
 * lsd
 
 ---
-<!-- effect=explosions -->
+
 # Thanks
 ![RC](vim/vcita_logo.png)
 
