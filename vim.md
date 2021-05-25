@@ -4,11 +4,11 @@
 # LoVIM . IT!
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into vim and learn how to work with it
+Note: In this lecture we'll take a technical dive into VIM and learn how to work with it
 
 ---
 
-### Work from the command line
+# Work from the command line
 * VIM - IDE
 * TMUX - Window Manager
 * Bonus - Other terminal tools 
@@ -23,11 +23,11 @@ Note: Vim - not an editor<br>Other tools like lazygit, if we have time
 * Custom configuration, Stuff may vary
 * Colors might be off for you 
 
-Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
+Note: Presentation available, Created with VIM<br>Configuration for nvim, can be used in VIM<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
 
 ---
 
-### Adventages
+# Adventages
 * Everything is very quick
 * Works the same on any OS
 * Can be accessed remotely with ease
@@ -47,20 +47,34 @@ Note: In windows can be installed from build in linux subsystem<br>For android u
 
 ---
 
+# TMUX
+* Sessions & attach
+* Tabs
+* Split Windows
+
+Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
+
+---
+
+# How do I start
+* Custom Config
+* VIM tutor
+* Spacevim
+
+---
+
 # Basics
-* : - Go to vim command mode
+* : - Go to VIM command mode
 * q - quit
 * e - open file
 * w - write  (save/save as)
 
-Note: Ask me how to quit vim<br>ESC has another function<br>Open existing/new file
+Note: Ask me how to quit VIM<br>ESC has another function<br>Open existing/new file
 
 ---
 
-
-
 # Out of the box
-## How most of us know vim
+## How most of us know VIM
 * Pretty bare boned and ugly
 * No UI elements (numbers, file manager, tabs, etc...)
 * No Auto complete
@@ -84,28 +98,59 @@ Note: Ask me how to quit vim<br>ESC has another function<br>Open existing/new fi
 ---
 
 # Normal Mode
-## Steps
-* Number - how many times
-* Command 
+## Motions
+### Move the cursor
+
+* {k}, {j} {-}, {+} {h} {l} - Up/Down Left/Right
+* {G}, {gg}, {^}, {$} - Start/End of Document/Line
+* {f/F}, {t/T} - Find, Till
+* {w} {W} {b} {B} {e} {E} - Word, Back, End
+* {%}, {✱} - Same Word
+* {⦃}, {⦄} - Paragraphs
+* {'}, {"} - Parenthesis
 
 ---
 
 # Normal Mode
-## Commands
+## Operators
 * {c} - Change
 * {d} - Delete 
 * {y} - Yank (copy)
+* {gU} {gu} - Go Uppercase/Lowercase
+* {＜} {＞} - Tab left/right
 
 ---
 
 # Normal Mode
-## Motions
-* {G}, {gg}, {^}, {$} - Start/End
-* {f}, {t} - Jump to character 
-* {%}, {✱}, {⦄}, - Jump
-* {w}, {b}, {e}, {t} - Words, Tag
-* {'}, {"} - Parentesis
-* {a}, {i} - All, Inside
+## Objects
+* {a} - a / {i} - inner
+* {w} {W} - word/WORD
+* {p} - Paragraph
+* {b} - Bracket
+ 
+---
+
+# Normal Mode
+## Steps
+### Use one of two formats
+
+* [Count] [Operator] [Motions/Objects]
+* 5       y          +
+* 3       d          w
+
+* [Operator] [Count] [Motions/Objects]
+* y       5          +
+* d       3          w
+
+---
+
+# Sessions
+
+---
+
+# Macros
+* Record a macro
+* Repeat a macro
 
 ---
 
@@ -132,6 +177,9 @@ Note: Ask me how to quit vim<br>ESC has another function<br>Open existing/new fi
 * Modular and installed by demend
 * Extend functionality
 * Efficiency can be monitored
+* "Marketplace"
+* Installation
+* Removal
 
 ---
 
@@ -163,24 +211,13 @@ Note: Ask me how to quit vim<br>ESC has another function<br>Open existing/new fi
 
 ---
 
-# How do I start
-* VIM tutor
-* Spacevim
-
----
-
-# TMUX
-* Sessions & attach
-* Tabs
-* Split Windows
-* Copy & Paste
-
----
-
 # More Resources
 * Pimp My Terminal
 * Oh My Bash/ZSH
 * lsd
+* MitzaSQL
+
+Note: bm Bookmarks
 
 ---
 
