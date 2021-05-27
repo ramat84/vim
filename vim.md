@@ -56,10 +56,10 @@ Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
 
 ---
 
-# How do I start
-* Custom Config
-* VIM tutor
-* Spacevim
+# Windows 
+* Tabs
+* Buffers
+* Windows
 
 ---
 
@@ -183,23 +183,11 @@ Note: Ask me how to quit VIM<br>ESC has another function<br>Open existing/new fi
 
 ---
 
+# VIM Plugins
 # NerdTree
-* File Manager
-* Bookmarks
-* File Manipulation
-
----
-
-# CoC
-* Syntax Autocomplete 
-* Jump to definition
-
----
-
 # FZF
-* Open
-* History
-* Grep
+# CoC
+Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autocomplete, Jump to definition,History, Grep
 
 ---
 
