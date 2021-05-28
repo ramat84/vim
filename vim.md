@@ -4,7 +4,7 @@
 # LoVIM . IT!
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into VIM and learn how to work with it
+Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>VIM Noob
 
 ---
 
@@ -13,17 +13,25 @@ Note: In this lecture we'll take a technical dive into VIM and learn how to work
 * TMUX - Window Manager
 * Bonus - Other terminal tools 
 
-Note: Vim - not an editor<br>Other tools like lazygit, if we have time
+Note: Vim - not an editor<br>Tools may differ<br>Other tools like lazygit, if we have time
 
 ---
 
-# Notes
+# Presentation Data
 * github.com/ramat84/vim (vim.md)
 * github.com/ramat84/config
 * Custom configuration, Stuff may vary
-* Colors might be off for you 
 
-Note: Presentation available, Created with VIM<br>Configuration for nvim, can be used in VIM<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
+Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts
+
+---
+
+# Versions
+* VI - Really Retro (1976)
+* VIM - VI Explosion (1991)
+* NeoVIM - Vim For Hipsters (2014)
+
+Note: A bit of history<br>VI - original, simple, not extendable<br>VIM - Extendable with plugins, Much more advanced<br>NVIM - improved vim, does everything VIM does, splitted to make VIM development more mainstream and not block development.
 
 ---
 
@@ -32,6 +40,7 @@ Note: Presentation available, Created with VIM<br>Configuration for nvim, can be
 * Works the same on any OS
 * Can be accessed remotely with ease
 * Actions are repeatable
+* Knowledge in VIM will last for a long time
 
 Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
 
@@ -43,7 +52,7 @@ Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeata
 * Windows: Download and install gvim.exe
 * Android: In Termux app, "apt install vim"
 
-Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard
+Note: Sorry, No example<br>For android use hackers keyboard
 
 ---
 
@@ -80,10 +89,11 @@ Note: Ask me how to quit VIM<br>ESC has another function<br>Open existing/new fi
 * No Auto complete
 * No Git information
 
+Note: Open examples/bare.sh<br>Show presentation
+
 ---
 
-# Chalanges
-## Learning Curve
+# Learning Curve
 
 ![RC](vim/curve.png)
 
@@ -92,8 +102,10 @@ Note: Ask me how to quit VIM<br>ESC has another function<br>Open existing/new fi
 # Modal Editor
 ## Edit before insert
 * Normal - Manipulate code, Navigate Files
-* Insert - Insert code
+* Insert - Insert code, Like an editor
 * Visual - Work visually with code
+
+Note: I won't go over Visual mode
 
 ---
 
@@ -108,6 +120,18 @@ Note: Ask me how to quit VIM<br>ESC has another function<br>Open existing/new fi
 * {%}, {✱} - Same Word
 * {⦃}, {⦄} - Paragraphs
 * {'}, {"} - Parenthesis
+
+---
+
+# Normal Mode
+## Ingridients
+* Command 
+* Number - how many times
+* Action (Motion)
+
+```Example: Delete 5 Words```
+
+Note: Open nvim with jquery.js
 
 ---
 
@@ -161,15 +185,6 @@ Note: Ask me how to quit VIM<br>ESC has another function<br>Open existing/new fi
 * Make work more efficient
 
 ![RC](vim/well.png)
-
----
-
-# Versions
-* VI - Really Retro (1976)
-* VIM - VI Explosion (1991)
-* NeoVIM - Vim For Hipsters (2014)
-
-![RC](vim/fork.jpg)
 
 ---
 
