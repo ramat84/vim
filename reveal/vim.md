@@ -1,7 +1,8 @@
 <!-- Use reveal-md to show this presentation -->
 
-### vim | Ram Matityahu
 # Lovim . IT!
+### vim | Ram Matityahu
+#### 937.1337
 ![RC](vim/mcvim.png)
 
 Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>vim Noob
@@ -191,6 +192,8 @@ d       3          w
 ---
 
 # Sessions
+* Save a session
+* Load a sessiion
 
 ---
 
@@ -201,6 +204,8 @@ d       3          w
 ---
 
 # Key mappings
+* Leader key
+* Mapping a key 
 
 ---
 

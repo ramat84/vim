@@ -83,7 +83,11 @@ body::after {
     box-shadow: inset 0 0 250px 60px black;
 }
 
-h2[id] {
+h1[id] {
+    font-size: 130px;
+}
+
+h2[id], h3[id] {
     margin-top: -35px;
 }
 
