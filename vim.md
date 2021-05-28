@@ -8,19 +8,10 @@ Note: In this lecture we'll take a technical dive into vim and learn how to work
 
 ---
 
-# Work from the command line
-* VIM - IDE
-* TMUX - Window Manager
-* Bonus - Other terminal tools 
-
-Note: Vim - not an editor<br>Tools may differ<br>Other tools like lazygit, if we have time
-
----
-
-# Presentation Data
+# Notes
+## All sources are available here
 * github.com/ramat84/vim (vim.md)
 * github.com/ramat84/config
-* Custom configuration, Stuff may vary
 
 Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts
 
@@ -40,19 +31,65 @@ Note: A bit of history<br>VI - original, simple, not extendable<br>VIM - Extenda
 * Works the same on any OS
 * Can be accessed remotely with ease
 * Actions are repeatable
-* Knowledge in VIM will last for a long time
+* Make work more efficient
+
+![RC](vim/well.png)
 
 Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
 
 ---
 
-# Install
+# How to learn VIM
+* Tutorial: vimtutor 
+* Game: https://vim-adventures.com/
+* Youtube: Learning Vim in a Week 
+* Cheat sheets
+
+<!-- 
+Cheat sheets:
+    My Cheat sheets:
+    
+
+    Others:
+    https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png 
+-->
+
+---
+
+# Work from the command line
+* VIM - IDE
+* TMUX - Window Manager
+
+Note: Vim - not an editor<br>Other tools like lazygit, if we have time
+
+---
+
+# Versions
+* VI - Really Retro (1976)
+* VIM - VI Explosion (1991)
+* NeoVIM - Vim For Hipsters (2014)
+
+![RC](vim/fork.jpg)
+
+---
+
+# Know Before beginning
+* It's free (as a beer)
+* VIM is different
+* Switch from Mouse to keyboard
+
+Note: Vim is nothing like you ever used before
+
+---
+
+# Installtion
 * Mac: brew install macvim --override-system-vim
 * Linux: apt/pacman/yum [install] gvim
 * Windows: Download and install gvim.exe
 * Android: In Termux app, "apt install vim"
+* https://jdhao.github.io/2018/10/19/tmux_nvim_true_color/
 
-Note: Sorry, No example<br>For android use hackers keyboard
+Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard<br>Fix the colors
 
 ---
 
@@ -72,20 +109,21 @@ Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
 
 ---
 
-# Basics
-* : - Go to VIM command mode
-* q - quit
-* e - open file
-* w - write  (save/save as)
+# Basic Work
+* {i} - Insert mode
+* {ESC} - Normal mode
+* {:} - Command mode
+* {e} - Open file
+* {q} - Quit
+* {w} - Write  (Save/Save as)
 
-Note: Ask me how to quit VIM<br>ESC has another function<br>Open existing/new file
+Note: Ask me how to quit VIM<br>Open existing/new file
 
 ---
 
 # Out of the box
 ## How most of us know VIM
-* Pretty bare boned and ugly
-* No UI elements (numbers, file manager, tabs, etc...)
+* Pretty bare boned,  No UI elements
 * No Auto complete
 * No Git information
 
@@ -99,11 +137,16 @@ Note: Open examples/bare.sh<br>Show presentation
 
 ---
 
-# Modal Editor
-## Edit before insert
-* Normal - Manipulate code, Navigate Files
-* Insert - Insert code, Like an editor
-* Visual - Work visually with code
+# Normal Mode
+## Motions
+### Basics
+
+* {k}, {j} {-}, {+} - Up/Down 
+* {h} {l} - Left/Right 
+* {G}, {gg} - Start/End of Document
+* {^}, {$} - Start/End of Line
+
+Note: Try not to use h/l
 
 Note: I won't go over Visual mode
 
@@ -111,13 +154,27 @@ Note: I won't go over Visual mode
 
 # Normal Mode
 ## Motions
-### Move the cursor
+### Basics
 
-* {k}, {j} {-}, {+} {h} {l} - Up/Down Left/Right
-* {G}, {gg}, {^}, {$} - Start/End of Document/Line
-* {f/F}, {t/T} - Find, Till
-* {w} {W} {b} {B} {e} {E} - Word, Back, End
-* {%}, {✱} - Same Word
+* {f} {F} {t} {T} - Find
+* {t}{T}, Till
+* {sXX} - Vim sneak (plugin)
+
+---
+
+# Normal Mode
+## Motions
+### Basics
+* {w} {W} - word, WORD
+* {b} {B} - back, BACK
+* {e} {E} - End, END
+* {#} {✱} - Same Word
+
+---
+
+# Normal Mode
+## Motions
+### Basics
 * {⦃}, {⦄} - Paragraphs
 * {'}, {"} - Parenthesis
 
@@ -178,13 +235,7 @@ Note: Open nvim with jquery.js
 
 ---
 
-# Does Well
-## Out of the box
-* Runs quickly
-* Runs everywhere
-* Make work more efficient
-
-![RC](vim/well.png)
+# Key mappings
 
 ---
 
@@ -199,9 +250,9 @@ Note: Open nvim with jquery.js
 ---
 
 # VIM Plugins
-# NerdTree
-# FZF
-# CoC
+* NerdTree
+* FZF
+* CoC
 Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autocomplete, Jump to definition,History, Grep
 
 ---
@@ -214,11 +265,15 @@ Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autoco
 
 ---
 
-# More Resources
-* Pimp My Terminal
+# Database
+* MitzaSQL
+
+
+---
+
+# Terminal
 * Oh My Bash/ZSH
 * lsd
-* MitzaSQL
 
 Note: bm Bookmarks
 
