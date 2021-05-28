@@ -4,7 +4,7 @@
 # LoVIM . IT!
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into vim and learn how to work with it
+Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>VIM Noob
 
 ---
 
@@ -13,17 +13,25 @@ Note: In this lecture we'll take a technical dive into vim and learn how to work
 * TMUX - Window Manager
 * Bonus - Other terminal tools 
 
-Note: Vim - not an editor<br>Other tools like lazygit, if we have time
+Note: Vim - not an editor<br>Tools may differ<br>Other tools like lazygit, if we have time
 
 ---
 
-# Notes
+# Presentation Data
 * github.com/ramat84/vim (vim.md)
 * github.com/ramat84/config
 * Custom configuration, Stuff may vary
-* Colors might be off for you 
 
 Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
+
+---
+
+# Versions
+* VI - Really Retro (1976)
+* VIM - VI Explosion (1991)
+* NeoVIM - Vim For Hipsters (2014)
+
+Note: VI - original, simple, not extendable<br>VIM - Extendable with plugins, Much more advanced<br>NVIM - improved vim, does everything VIM does, splitted to make VIM development more mainstream and not block development.
 
 ---
 
@@ -32,6 +40,7 @@ Note: Presentation available, Created with vim<br>Configuration for nvim, can be
 * Works the same on any OS
 * Can be accessed remotely with ease
 * Actions are repeatable
+* Knolage in VIM will last for a long time
 
 Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
 
@@ -41,30 +50,34 @@ Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeata
 * Mac: brew install macvim --override-system-vim
 * Linux: apt/pacman/yum [install] gvim
 * Windows: Download and install gvim.exe
+* Android: In Termux app, "apt install vim"
+
+Note: Sorry, No example<br>For android use hackers keyboard
 
 ---
 
 # Basics
 * : - Go to vim command mode
-* q - quit
+* q - quit (q! for force)
+* e - open/create file
 * w - write  (save/save as)
-* e - open file
+
+Note: cd example<br> /bare.sh<br>Ask me how to quit vim<br>ESC has another function<br>Open existing/new file
 
 ---
 
-
-
 # Out of the box
-## How most of us know vim
-* Pretty bare boned and ugly
+## How most of us knows vim
+* Pretty bare boned
 * No UI elements (numbers, file manager, tabs, etc...)
 * No Auto complete
 * No Git information
 
+Note: Open examples/bare.sh<br>Show presentation
+
 ---
 
-# Chalanges
-## Learning Curve
+# Learning Curve
 
 ![RC](vim/curve.png)
 
@@ -73,15 +86,22 @@ Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeata
 # Modal Editor
 ## Edit before insert
 * Normal - Manipulate code, Navigate Files
-* Insert - Insert code
+* Insert - Insert code, Like an editor
 * Visual - Work visually with code
+
+Note: I won't go over Visual mode
 
 ---
 
 # Normal Mode
-## Steps
-* Number - how many times
+## Ingridients
 * Command 
+* Number - how many times
+* Action (Motion)
+
+```Example: Delete 5 Words```
+
+Note: Open nvim with jquery.js
 
 ---
 
@@ -111,15 +131,6 @@ Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeata
 * Make work more efficient
 
 ![RC](vim/well.png)
-
----
-
-# Versions
-* VI - Really Retro (1976)
-* VIM - VI Explosion (1991)
-* NeoVIM - Vim For Hipsters (2014)
-
-![RC](vim/fork.jpg)
 
 ---
 

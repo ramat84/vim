@@ -4,7 +4,7 @@
 # LoVIM . IT!
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into VIM and learn how to work with it
+Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>VIM Noob
 
 ---
 
@@ -13,7 +13,16 @@ Note: In this lecture we'll take a technical dive into VIM and learn how to work
 * github.com/ramat84/vim (vim.md)
 * github.com/ramat84/config
 
-Note: Presentation available, Created with VIM<br>Configuration for nvim, can be used in VIM<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
+Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts
+
+---
+
+# Versions
+* VI - Really Retro (1976)
+* VIM - VI Explosion (1991)
+* NeoVIM - Vim For Hipsters (2014)
+
+Note: A bit of history<br>VI - original, simple, not extendable<br>VIM - Extendable with plugins, Much more advanced<br>NVIM - improved vim, does everything VIM does, splitted to make VIM development more mainstream and not block development.
 
 ---
 
@@ -118,10 +127,11 @@ Note: Ask me how to quit VIM<br>Open existing/new file
 * No Auto complete
 * No Git information
 
+Note: Open examples/bare.sh<br>Show presentation
+
 ---
 
-# Chalanges
-## Learning Curve
+# Learning Curve
 
 ![RC](vim/curve.png)
 
@@ -137,6 +147,8 @@ Note: Ask me how to quit VIM<br>Open existing/new file
 * {^}, {$} - Start/End of Line
 
 Note: Try not to use h/l
+
+Note: I won't go over Visual mode
 
 ---
 
@@ -165,6 +177,18 @@ Note: Try not to use h/l
 ### Basics
 * {⦃}, {⦄} - Paragraphs
 * {'}, {"} - Parenthesis
+
+---
+
+# Normal Mode
+## Ingridients
+* Command 
+* Number - how many times
+* Action (Motion)
+
+```Example: Delete 5 Words```
+
+Note: Open nvim with jquery.js
 
 ---
 

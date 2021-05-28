@@ -10,6 +10,8 @@ kbd {
     box-shadow: 3px 3px 1px #848282;
     margin: 2px;
     /* font-size: small; */
+    font-size: 22px;
+    line-height: 25px;
     vertical-align: text-bottom;
     background: #a2a2a2;
     font-weight: 500;
@@ -22,7 +24,6 @@ kbd {
     /* letter-spacing: 0.5px; */
     letter-spacing: 1px;
 
-
     /* Prevent selection */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -30,9 +31,9 @@ kbd {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 50px;
+    width: 25px;
     text-align: center;
-    height: 50px;
+    height: 25px;
     box-sizing: border-box;
 }
 
