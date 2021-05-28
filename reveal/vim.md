@@ -176,18 +176,21 @@ Note: Vim sneak is a plugin
 | Operators                          | Objects               |
 | ---------------------------------- | --------------------- |
 | <kbd>c</kbd> Change                         | <kbd>a</kbd> <kbd>i</kbd> a, in a       |
-| <kbd>d</kbd> Delete                         | <kbd>w</kbd> <kbd>W</kbd> word/WORD     |
-| <kbd>y</kbd> Yank (copy)                    | <kbd>p</kbd> Paragraph         |
-| <kbd>gU</kbd> <kbd>gu</kbd> Go Uppercase/Lowercase   | <kbd>b</kbd> Bracket           |
-| <kbd>＜</kbd> <kbd>＞</kbd> Tab left/right           | <kbd>'</kbd> <kbd>"</kbd> Parenthesis   |
+| <kbd>d</kbd> Delete, dd - full row          | <kbd>w</kbd> <kbd>W</kbd> word/WORD     |
+| <kbd>y</kbd> Yank (copy), yy - full row     | <kbd>p</kbd> Paragraph         |
+| <kbd>gU</kbd> <kbd>gu</kbd> Go Uppercase/Lowercase   | <kbd>⦃</kbd> Bracket           |
+| <kbd>＜</kbd> <kbd>＞</kbd> Ident left/right         | <kbd>'</kbd> <kbd>"</kbd> Parenthesis   |
 
 ```
 [Count+Operator] [Motions/Objects]
-5       y          +
-3       d          w
-y       5          +
-d       3          w
+Delete 5 Words
+Y a Paragraph
+2 (lines) Yank 
+Ident inside Bracket
+
 ```
+
+Note: yy and dd for full rows
 
 ---
 

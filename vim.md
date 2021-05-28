@@ -127,6 +127,12 @@ Note: Ask me how to quit vim<br>Open existing/new file
 
 ---
 
+# Sessions
+* Save a session
+* Load a sessiion
+
+---
+
 # Normal Mode
 #### Motions
 ### Moving Around
@@ -176,30 +182,28 @@ Note: Vim sneak is a plugin
 | Operators                          | Objects               |
 | ---------------------------------- | --------------------- |
 | {c} Change                         | {a} {i} a, in a       |
-| {d} Delete                         | {w} {W} word/WORD     |
-| {y} Yank (copy)                    | {p} Paragraph         |
-| {gU} {gu} Go Uppercase/Lowercase   | {b} Bracket           |
-| {＜} {＞} Tab left/right           | {'} {"} Parenthesis   |
+| {d} Delete, dd - full row          | {w} {W} word/WORD     |
+| {y} Yank (copy), yy - full row     | {p} Paragraph         |
+| {gU} {gu} Go Uppercase/Lowercase   | {⦃} Bracket           |
+| {＜} {＞} Ident left/right         | {'} {"} Parenthesis   |
 
 ```
 [Count+Operator] [Motions/Objects]
-5       y          +
-3       d          w
-y       5          +
-d       3          w
+Delete 5 Words
+Y a Paragraph
+2 (lines) Yank 
+Ident inside Bracket
+
 ```
 
----
-
-# Sessions
-* Save a session
-* Load a sessiion
+Note: yy and dd for full rows
 
 ---
 
 # Macros
-* Record a macro
-* Repeat a macro
+* {q} qX - Record a macro
+* {@} @X - Repeat a macro
+* {.} - Macro repeater plugin 
 
 ---
 
