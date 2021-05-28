@@ -1,77 +1,36 @@
 <!-- Use reveal-md to show this presentation -->
 
-### VIM | Ram Matityahu
-# LoVIM . IT!
+### vim | Ram Matityahu
+# Lovim . IT!
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>VIM Noob
+Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>vim Noob
 
 ---
 
-### Work from the command line
-* VIM - IDE
-* TMUX - Window Manager
-* Bonus - Other terminal tools 
-
-Note: Vim - not an editor<br>Tools may differ<br>Other tools like lazygit, if we have time
-
----
-
-# Presentation Data
+# 🖎 Notes
+## All sources are available here
 * github.com/ramat84/vim (vim.md)
 * github.com/ramat84/config
-* Custom configuration, Stuff may vary
 
-Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts<br>Fix colors with :checkhealth in nvim
+Note: Presentation available, Created with vim<br>Configuration for Nvim, can be used in vim<br>Custom shortcuts
 
 ---
 
 # Versions
-* VI - Really Retro (1976)
-* VIM - VI Explosion (1991)
-* NeoVIM - Vim For Hipsters (2014)
+* 👴 VI - Really Retro (1976)
+* 🤯 vim - VI Explosion (1991)
+* 🧔 Neovim - Vim For Hipsters (2014)
 
-Note: VI - original, simple, not extendable<br>VIM - Extendable with plugins, Much more advanced<br>NVIM - improved vim, does everything VIM does, splitted to make VIM development more mainstream and not block development.
-
----
-
-### Adventages
-* Everything is very quick
-* Works the same on any OS
-* Can be accessed remotely with ease
-* Actions are repeatable
-* Knolage in VIM will last for a long time
-
-Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
+Note: A bit of history<br>VI - original, simple, not extendable<br>vim - Extendable with plugins, Much more advanced<br>Nvim - improved vim, does everything vim does, spitted to make vim development more mainstream and not block development.
 
 ---
 
-# Install
-* Mac: brew install macvim --override-system-vim
-* Linux: apt/pacman/yum [install] gvim
-* Windows: Download and install gvim.exe
-* Android: In Termux app, "apt install vim"
-
-Note: Sorry, No example<br>For android use hackers keyboard
-
----
-
-# Basics
-* : - Go to vim command mode
-* q - quit (q! for force)
-* e - open/create file
-* w - write  (save/save as)
-
-Note: cd example<br> /bare.sh<br>Ask me how to quit vim<br>ESC has another function<br>Open existing/new file
-
----
-
-# Out of the box
-## How most of us knows vim
-* Pretty bare boned
-* No UI elements (numbers, file manager, tabs, etc...)
-* No Auto complete
-* No Git information
+# 📦 Out of the box
+## How most of us know vim
+* 🦴 Pretty bare boned,  No UI elements
+* … No Auto complete
+* 🛠 No Git information
 
 Note: Open examples/bare.sh<br>Show presentation
 
@@ -83,81 +42,183 @@ Note: Open examples/bare.sh<br>Show presentation
 
 ---
 
-# Modal Editor
-## Edit before insert
-* Normal - Manipulate code, Navigate Files
-* Insert - Insert code, Like an editor
-* Visual - Work visually with code
+# ✔ Adventages
+* ⚡ Everything is very quick
+* 💻 Works the same on any OS
+* 🚪 Can be accessed remotely with ease
+* ➿ Actions are repeatable
+* 🕔 Make work more efficient
 
-Note: I won't go over Visual mode
+Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
+
+---
+
+# How to learn vim
+* Tutorial: vimtutor 
+* Game: https://vim-adventures.com/
+* Youtube: Learning Vim in a Week 
+* Cheat sheets
+
+Notes: You can find links to the cheatsheets in the presentation
+
+<!-- 
+Cheat sheets:
+    My Cheat sheets:
+    https://github.com/ramat84/vim/tree/master/cheatsheets
+
+    Others:
+    https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png 
+-->
+
+---
+
+# 🤔 Know Before beginning
+* 🍺 It's free (as a beer)
+* 🤖 It's different
+* ⌨ It's a keyboard thing
+
+Note: Vim is nothing like you ever used before
+
+---
+
+# 🖵 TMUX
+* Sessions & attach
+* Tabs
+* Split Windows
+
+Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
+
+---
+
+# Installtion
+* 🍎 Mac: brew install macvim --override-system-vim
+* 🐧 Linux: apt install gvim
+* 🪟 Windows: gvim.exe
+* 🤖 Android: Use Termux Linux terminal
+
+```
+On mac use iTerm2!
+🎨 And setup the colors: https://jdhao.github.io/2018/10/19/tmux_Nvim_true_color/
+```
+
+Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard<br>Fix the colors
+
+---
+
+# 🗔 Windows 
+* Tabs - Sessions
+* Buffers - Tabs
+* Windows - Panes
+
+Note: Names are confusing 
+
+---
+
+# Basic Work
+* <kbd>i</kbd> - Insert mode
+* <kbd>ESC</kbd> - Normal mode
+* <kbd>:</kbd> - Command mode
+* <kbd>e</kbd> - Open file
+* <kbd>q</kbd> - Quit
+* <kbd>w</kbd> - Write  (Save/Save as)
+
+Note: Ask me how to quit vim<br>Open existing/new file
 
 ---
 
 # Normal Mode
-## Ingridients
-* Command 
-* Number - how many times
-* Action (Motion)
+#### Motions
+### Moving Around
 
-```Example: Delete 5 Words```
+* <kbd>k</kbd> <kbd>j</kbd>, <kbd>-</kbd> <kbd>+</kbd> - Up/Down 
+* <kbd>h</kbd> <kbd>l</kbd> - Left/Right 
+* <kbd>G</kbd> <kbd>gg</kbd> - Start/End of Document
+* <kbd>^</kbd> <kbd>$</kbd> - Start/End of Line
 
-Note: Open nvim with jquery.js
-
----
-
-# Normal Mode
-## Commands
-* <kbd>c</kbd> - Change
-* <kbd>d</kbd> - Delete 
-* <kbd>y</kbd> - Yank (copy)
+Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X, :+X, :-X
 
 ---
 
 # Normal Mode
-## Motions
-* <kbd>G</kbd>, <kbd>gg</kbd>, <kbd>^</kbd>, <kbd>$</kbd> - Start/End
-* <kbd>f</kbd>, <kbd>t</kbd> - Jump to character 
-* <kbd>%</kbd>, <kbd>✱</kbd>, <kbd>⦄</kbd>, - Jump
-* <kbd>w</kbd>, <kbd>b</kbd>, <kbd>e</kbd>, <kbd>t</kbd> - Words, Tag
-* <kbd>'</kbd>, <kbd>"</kbd> - Parentesis
-* <kbd>a</kbd>, <kbd>i</kbd> - All, Inside
+#### Motions
+### Moving Around
+
+* <kbd>w</kbd> <kbd>W</kbd> - word, WORD
+* <kbd>b</kbd> <kbd>B</kbd> - back, BACK
+* <kbd>e</kbd> <kbd>E</kbd> - End, END
+* <kbd>#</kbd> <kbd>✱</kbd> - Same Word
+* <kbd>⦃</kbd> <kbd>⦄</kbd> - Paragraphs
 
 ---
 
-# Does Well
-## Out of the box
-* Runs quickly
-* Runs everywhere
-* Make work more efficient
+# Normal Mode
+#### Motions
+### Moving Around
 
-![RC](vim/well.png)
+* <kbd>f</kbd> <kbd>F</kbd> <kbd>t</kbd> <kbd>T</kbd> - Find
+* <kbd>t</kbd> <kbd>T</kbd> - Till
+* <kbd>s</kbd> - Vim sneak, 2 Characters 
+
+Note: Vim sneak is a plugin
+---
+
+# Normal Mode
+## Go to Insert mode
+
+* <kbd>i</kbd> <kbd>a</kbd> - After/Before Current cursor
+* <kbd>I</kbd> <kbd>A</kbd> - Beginning/End Of line
+* <kbd>o</kbd> <kbd>O</kbd> - Previous/Next Line
 
 ---
 
-# VIM Plugins
+# Normal Mode
+| Operators                          | Objects               |
+| ---------------------------------- | --------------------- |
+| <kbd>c</kbd> Change                         | <kbd>a</kbd> <kbd>i</kbd> a, in a       |
+| <kbd>d</kbd> Delete                         | <kbd>w</kbd> <kbd>W</kbd> word/WORD     |
+| <kbd>y</kbd> Yank (copy)                    | <kbd>p</kbd> Paragraph         |
+| <kbd>gU</kbd> <kbd>gu</kbd> Go Uppercase/Lowercase   | <kbd>b</kbd> Bracket           |
+| <kbd>＜</kbd> <kbd>＞</kbd> Tab left/right           | <kbd>'</kbd> <kbd>"</kbd> Parenthesis   |
+
+```
+[Count+Operator] [Motions/Objects]
+5       y          +
+3       d          w
+y       5          +
+d       3          w
+```
+
+---
+
+# Sessions
+
+---
+
+# Macros
+* Record a macro
+* Repeat a macro
+
+---
+
+# Key mappings
+
+---
+
+# vim Plugins
 * Modular and installed by demend
 * Extend functionality
 * Efficiency can be monitored
+* "Marketplace"
+* Installation
+* Removal
 
 ---
 
-# NerdTree
-* File Manager
-* Bookmarks
-* File Manipulation
-
----
-
-# CoC
-* Syntax Autocomplete 
-* Jump to definition
-
----
-
-# FZF
-* Open
-* History
-* Grep
+# vim Plugins
+* NerdTree
+* FZF
+* CoC
+Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autocomplete, Jump to definition,History, Grep
 
 ---
 
@@ -169,24 +230,17 @@ Note: Open nvim with jquery.js
 
 ---
 
-# How do I start
-* VIM tutor
-* Spacevim
+# Database
+* MitzaSQL
+
 
 ---
 
-# TMUX
-* Sessions & attach
-* Tabs
-* Split Windows
-* Copy & Paste
-
----
-
-# More Resources
-* Pimp My Terminal
+# Terminal
 * Oh My Bash/ZSH
 * lsd
+
+Note: bm Bookmarks
 
 ---
 

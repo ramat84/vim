@@ -1,131 +1,36 @@
 <!-- Use reveal-md to show this presentation -->
 
-### VIM | Ram Matityahu
-# LoVIM . IT!
+### vim | Ram Matityahu
+# Lovim . IT!
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>VIM Noob
+Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>vim Noob
 
 ---
 
-# Notes
+# 🖎 Notes
 ## All sources are available here
 * github.com/ramat84/vim (vim.md)
 * github.com/ramat84/config
 
-Note: Presentation available, Created with vim<br>Configuration for nvim, can be used in vim<br>Custom shortcuts
+Note: Presentation available, Created with vim<br>Configuration for Nvim, can be used in vim<br>Custom shortcuts
 
 ---
 
 # Versions
-* VI - Really Retro (1976)
-* VIM - VI Explosion (1991)
-* NeoVIM - Vim For Hipsters (2014)
+* 👴 VI - Really Retro (1976)
+* 🤯 vim - VI Explosion (1991)
+* 🧔 Neovim - Vim For Hipsters (2014)
 
-Note: A bit of history<br>VI - original, simple, not extendable<br>VIM - Extendable with plugins, Much more advanced<br>NVIM - improved vim, does everything VIM does, splitted to make VIM development more mainstream and not block development.
-
----
-
-# Adventages
-* Everything is very quick
-* Works the same on any OS
-* Can be accessed remotely with ease
-* Actions are repeatable
-* Make work more efficient
-
-![RC](vim/well.png)
-
-Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
+Note: A bit of history<br>VI - original, simple, not extendable<br>vim - Extendable with plugins, Much more advanced<br>Nvim - improved vim, does everything vim does, spitted to make vim development more mainstream and not block development.
 
 ---
 
-# How to learn VIM
-* Tutorial: vimtutor 
-* Game: https://vim-adventures.com/
-* Youtube: Learning Vim in a Week 
-* Cheat sheets
-
-<!-- 
-Cheat sheets:
-    My Cheat sheets:
-    
-
-    Others:
-    https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png 
--->
-
----
-
-# Work from the command line
-* VIM - IDE
-* TMUX - Window Manager
-
-Note: Vim - not an editor<br>Other tools like lazygit, if we have time
-
----
-
-# Versions
-* VI - Really Retro (1976)
-* VIM - VI Explosion (1991)
-* NeoVIM - Vim For Hipsters (2014)
-
-![RC](vim/fork.jpg)
-
----
-
-# Know Before beginning
-* It's free (as a beer)
-* VIM is different
-* Switch from Mouse to keyboard
-
-Note: Vim is nothing like you ever used before
-
----
-
-# Installtion
-* Mac: brew install macvim --override-system-vim
-* Linux: apt/pacman/yum [install] gvim
-* Windows: Download and install gvim.exe
-* Android: In Termux app, "apt install vim"
-* https://jdhao.github.io/2018/10/19/tmux_nvim_true_color/
-
-Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard<br>Fix the colors
-
----
-
-# TMUX
-* Sessions & attach
-* Tabs
-* Split Windows
-
-Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
-
----
-
-# Windows 
-* Tabs
-* Buffers
-* Windows
-
----
-
-# Basic Work
-* {i} - Insert mode
-* {ESC} - Normal mode
-* {:} - Command mode
-* {e} - Open file
-* {q} - Quit
-* {w} - Write  (Save/Save as)
-
-Note: Ask me how to quit VIM<br>Open existing/new file
-
----
-
-# Out of the box
-## How most of us know VIM
-* Pretty bare boned,  No UI elements
-* No Auto complete
-* No Git information
+# 📦 Out of the box
+## How most of us know vim
+* 🦴 Pretty bare boned,  No UI elements
+* … No Auto complete
+* 🛠 No Git information
 
 Note: Open examples/bare.sh<br>Show presentation
 
@@ -137,95 +42,157 @@ Note: Open examples/bare.sh<br>Show presentation
 
 ---
 
-# Normal Mode
-## Motions
-### Basics
+# ✔ Adventages
+* ⚡ Everything is very quick
+* 💻 Works the same on any OS
+* 🚪 Can be accessed remotely with ease
+* ➿ Actions are repeatable
+* 🕔 Make work more efficient
 
-* {k}, {j} {-}, {+} - Up/Down 
+Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
+
+---
+
+# How to learn vim
+* Tutorial: vimtutor 
+* Game: https://vim-adventures.com/
+* Youtube: Learning Vim in a Week 
+* Cheat sheets
+
+Notes: You can find links to the cheatsheets in the presentation
+
+<!-- 
+Cheat sheets:
+    My Cheat sheets:
+    https://github.com/ramat84/vim/tree/master/cheatsheets
+
+    Others:
+    https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png 
+-->
+
+---
+
+# 🤔 Know Before beginning
+* 🍺 It's free (as a beer)
+* 🤖 It's different
+* ⌨ It's a keyboard thing
+
+Note: Vim is nothing like you ever used before
+
+---
+
+# 🖵 TMUX
+* Sessions & attach
+* Tabs
+* Split Windows
+
+Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
+
+---
+
+# Installtion
+* 🍎 Mac: brew install macvim --override-system-vim
+* 🐧 Linux: apt install gvim
+* 🪟 Windows: gvim.exe
+* 🤖 Android: Use Termux Linux terminal
+
+```
+On mac use iTerm2!
+🎨 And setup the colors: https://jdhao.github.io/2018/10/19/tmux_Nvim_true_color/
+```
+
+Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard<br>Fix the colors
+
+---
+
+# 🗔 Windows 
+* Tabs - Sessions
+* Buffers - Tabs
+* Windows - Panes
+
+Note: Names are confusing 
+
+---
+
+# Basic Work
+* {i} - Insert mode
+* {ESC} - Normal mode
+* {:} - Command mode
+* {e} - Open file
+* {q} - Quit
+* {w} - Write  (Save/Save as)
+
+Note: Ask me how to quit vim<br>Open existing/new file
+
+---
+
+# Normal Mode
+#### Motions
+### Moving Around
+
+* {k} {j}, {-} {+} - Up/Down 
 * {h} {l} - Left/Right 
-* {G}, {gg} - Start/End of Document
-* {^}, {$} - Start/End of Line
+* {G} {gg} - Start/End of Document
+* {^} {$} - Start/End of Line
 
-Note: Try not to use h/l
-
-Note: I won't go over Visual mode
+Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X, :+X, :-X
 
 ---
 
 # Normal Mode
-## Motions
-### Basics
+#### Motions
+### Moving Around
 
-* {f} {F} {t} {T} - Find
-* {t}{T}, Till
-* {sXX} - Vim sneak (plugin)
-
----
-
-# Normal Mode
-## Motions
-### Basics
 * {w} {W} - word, WORD
 * {b} {B} - back, BACK
 * {e} {E} - End, END
 * {#} {✱} - Same Word
+* {⦃} {⦄} - Paragraphs
 
 ---
 
 # Normal Mode
-## Motions
-### Basics
-* {⦃}, {⦄} - Paragraphs
-* {'}, {"} - Parenthesis
+#### Motions
+### Moving Around
+
+* {f} {F} {t} {T} - Find
+* {t} {T} - Till
+* {s} - Vim sneak, 2 Characters 
+
+Note: Vim sneak is a plugin
+---
+
+# Normal Mode
+## Go to Insert mode
+
+* {i} {a} - After/Before Current cursor
+* {I} {A} - Beginning/End Of line
+* {o} {O} - Previous/Next Line
 
 ---
 
 # Normal Mode
-## Ingridients
-* Command 
-* Number - how many times
-* Action (Motion)
+| Operators                          | Objects               |
+| ---------------------------------- | --------------------- |
+| {c} Change                         | {a} {i} a, in a       |
+| {d} Delete                         | {w} {W} word/WORD     |
+| {y} Yank (copy)                    | {p} Paragraph         |
+| {gU} {gu} Go Uppercase/Lowercase   | {b} Bracket           |
+| {＜} {＞} Tab left/right           | {'} {"} Parenthesis   |
 
-```Example: Delete 5 Words```
-
-Note: Open nvim with jquery.js
-
----
-
-# Normal Mode
-## Operators
-* {c} - Change
-* {d} - Delete 
-* {y} - Yank (copy)
-* {gU} {gu} - Go Uppercase/Lowercase
-* {＜} {＞} - Tab left/right
-
----
-
-# Normal Mode
-## Objects
-* {a} - a / {i} - inner
-* {w} {W} - word/WORD
-* {p} - Paragraph
-* {b} - Bracket
- 
----
-
-# Normal Mode
-## Steps
-### Use one of two formats
-
-* [Count] [Operator] [Motions/Objects]
-* 5       y          +
-* 3       d          w
-
-* [Operator] [Count] [Motions/Objects]
-* y       5          +
-* d       3          w
+```
+[Count+Operator] [Motions/Objects]
+5       y          +
+3       d          w
+y       5          +
+d       3          w
+```
 
 ---
 
 # Sessions
+* Save a session
+* Load a sessiion
 
 ---
 
@@ -236,10 +203,12 @@ Note: Open nvim with jquery.js
 ---
 
 # Key mappings
+* Leader key
+* Mapping a key 
 
 ---
 
-# VIM Plugins
+# vim Plugins
 * Modular and installed by demend
 * Extend functionality
 * Efficiency can be monitored
@@ -249,7 +218,7 @@ Note: Open nvim with jquery.js
 
 ---
 
-# VIM Plugins
+# vim Plugins
 * NerdTree
 * FZF
 * CoC

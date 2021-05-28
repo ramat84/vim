@@ -5,87 +5,112 @@
 kbd {
     font-family: Consolas, "Lucida Console", monospace;
     display: inline-block;
-    border-radius: 3px;
     padding: 0px 4px;
-    box-shadow: 3px 3px 1px #848282;
+    box-shadow: 2px 5px 0 2px #151515, 2px 2px 10px black,inset 4px 12px 9px #484545;
     margin: 2px;
-    /* font-size: small; */
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 45px;
     vertical-align: text-bottom;
-    background: #a2a2a2;
-    font-weight: 500;
+    background: black;
     color: #fff;
     cursor: pointer;
     font-variant: small-caps;
     font-weight: 600;
-
-    /* This two work */
-    /* letter-spacing: 0.5px; */
     letter-spacing: 1px;
-
-    /* Prevent selection */
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
-    width: 25px;
+    min-width: 40px;
     text-align: center;
-    height: 25px;
+    height: 40px;
     box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0px;
+    margin: 0 1px;
+    padding: 0px 10px;
+    text-align: center;
 }
 
-kbd:hover, kbd:hover * {
-  color: black;
-  /* box-shadow: 1px 1px 1px #333; */
-}
-kbd:active, kbd:active * {
-  color: black;
-  box-shadow: 1px 1px 0px #ddd inset;
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-kbd kbd {
-  padding: 0px;
-  margin: 0 1px;
-  box-shadow: 0px 0px 0px black;
-  vertical-align: baseline;
-  background: none;
+li {
+    display: block;
+    position: relative;
+    perspective: 550px;
+    margin-bottom: 10px;
 }
 
-kbd kbd:hover {
-  box-shadow: 0px 0px 0px black;
+li::after {
+    position: absolute;
+    left: -30px;
+    top: Calc( 50% - 4px );
+    height: 10px;
+    width: 10px;
+    background: #00000054;
+    content: " ";
+    z-index: -1;
+    transform: rotate(45deg);
+    box-shadow: 2px 2px gray;
 }
 
-kbd:active kbd {
-  box-shadow: 0px 0px 0px black;
-  background: none;
+.slides {
+    width: 1080px !important
 }
 
-/* Deep blue */
-kbd.deep-blue, .deep-blue kbd {
-  background: steelblue;
-  color: #eee;
+code {
+    font-size: 14px;
+    display: block;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    margin: 20px 0;
 }
 
-kbd.deep-blue:hover, kbd.deep-blue:hover *, .deep-blue kbd:hover {
-  color: white;
+body {
+    box-shadow: inset 0 90px #313131,inset 0 -90px black;
 }
 
-/* Dark apple */
-kbd.dark-apple, .dark-apple kbd {
-  background: black;
-  color: #ddd;
+body::after {
+    background: url(vim/bg.png);
+    content: " ";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    z-index: -1;
+    box-shadow: inset 0 0 250px 60px black;
 }
 
-kbd.dark-apple:hover, kbd.dark-apple:hover *, .dark-apple kbd:hover {
-  color: white;
+h2[id] {
+    margin-top: -35px;
 }
 
-/* Type writer */
-kbd.type-writer, .type-writer kbd {
-  border-radius: 10px;
-  background: #333;
-  color: white;
+h4[id] {
+    font-size: 45px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+table {
+    border-spacing: 0;
+    font-size: 20px;
+    margin-top: -32px;
+}
+
+table kbd {
+    transform: scale(0.7);
+}
+
+table td, table th {
+    border-bottom: 0 !important;
+    padding: 0 20px !important;
+    margin: 0 !important;
+}
+
+table th {
+    padding-bottom: 10px !important;
 }
