@@ -14,7 +14,6 @@ kbd {
     background: black;
     color: #fff;
     cursor: pointer;
-    font-variant: small-caps;
     font-weight: 600;
     letter-spacing: 1px;
     user-select: none;
@@ -117,4 +116,8 @@ table td, table th {
 
 table th {
     padding-bottom: 10px !important;
+}
+
+pre {
+    max-width: 68%;
 }

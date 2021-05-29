@@ -1,39 +1,43 @@
 <!-- Use reveal-md to show this presentation -->
 
-# Lovim . IT!
-### vim | Ram Matityahu
+# LoVim . IT!
+### Vim | Ram Matityahu
 #### 937.1337
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into vim and learn how to work with it<BR>vim Noob
+Note: In this lecture we'll take a technical dive into Vim and learn how to work with it<BR>Vim Noob
 
 ---
 
 # 🖎 Notes
 ## All sources are available here
-* github.com/ramat84/vim (vim.md)
+* github.com/ramat84/Vim (Vim.md)
 * github.com/ramat84/config
 
-Note: Presentation available, Created with vim<br>Configuration for Nvim, can be used in vim<br>Custom shortcuts
+Note: Presentation available, Created with Vim<br>Configuration for NVim, can be used in Vim<br>Custom shortcuts
 
 ---
 
 # Versions
 * 👴 VI - Really Retro (1976)
-* 🤯 vim - VI Explosion (1991)
-* 🧔 Neovim - Vim For Hipsters (2014)
+* 🤯 Vim - VI Explosion (1991)
+* 🧔 NeoVim - Vim For Hipsters (2014)
 
-Note: A bit of history<br>VI - original, simple, not extendable<br>vim - Extendable with plugins, Much more advanced<br>Nvim - improved vim, does everything vim does, spitted to make vim development more mainstream and not block development.
+Note: A bit of history<br>VI - original, simple, not extendable<br>Vim - Extendable with plugins, Much more advanced<br>NVim - improved Vim, does everything Vim does, spitted to make Vim development more mainstream and not block development.
 
 ---
 
 # 📦 Out of the box
-## How most of us know vim
+## How most of us know Vim
 * 🦴 Pretty bare boned,  No UI elements
 * … No Auto complete
 * 🛠 No Git information
 
-Note: Open examples/bare.sh<br>Show presentation
+```
+vim -u NONE
+```
+
+Note: vim -U NONE examples/files/jquery.js
 
 ---
 
@@ -49,15 +53,17 @@ Note: Open examples/bare.sh<br>Show presentation
 * 🚪 Can be accessed remotely with ease
 * ➿ Actions are repeatable
 * 🕔 Make work more efficient
+* ⚙ Vim mode exists in most modern IDEs
 
 Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
 
 ---
 
-# How to learn vim
-* Tutorial: vimtutor 
-* Game: https://vim-adventures.com/
+# How to learn Vim
+* Tutorial: Vimtutor 
+* Game: https://Vim-adventures.com/
 * Youtube: Learning Vim in a Week 
+* Google: Vim for [MY LANGUAGE]
 * Cheat sheets
 
 Notes: You can find links to the cheatsheets in the presentation
@@ -92,14 +98,14 @@ Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
 ---
 
 # Installtion
-* 🍎 Mac: brew install macvim --override-system-vim
-* 🐧 Linux: apt install gvim
-* 🪟 Windows: gvim.exe
+* 🍎 Mac: brew install macVim --override-system-Vim
+* 🐧 Linux: apt install gVim
+* 🪟 Windows: gVim.exe
 * 🤖 Android: Use Termux Linux terminal
 
 ```
 On mac use iTerm2!
-🎨 And setup the colors: https://jdhao.github.io/2018/10/19/tmux_Nvim_true_color/
+🎨 And setup the colors: https://jdhao.github.io/2018/10/19/tmux_NVim_true_color/
 ```
 
 Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard<br>Fix the colors
@@ -107,7 +113,7 @@ Note: In windows can be installed from build in linux subsystem<br>For android u
 ---
 
 # 🗔 Windows 
-* Tabs - Sessions
+* Tabs - Instances
 * Buffers - Tabs
 * Windows - Panes
 
@@ -116,14 +122,18 @@ Note: Names are confusing
 ---
 
 # Basic Work
-* {i} - Insert mode
+* {i} {a} - Insert mode
 * {ESC} - Normal mode
 * {:} - Command mode
-* {e} - Open file
 * {q} - Quit
 * {w} - Write  (Save/Save as)
 
-Note: Ask me how to quit vim<br>Open existing/new file
+```
+Add to ~/.vimrc for issues with arrow keys in insert mode:
+set nocompatible
+```
+
+Note: Ask me how to quit Vim<br>Open existing/new file
 
 ---
 
@@ -140,9 +150,10 @@ Note: Ask me how to quit vim<br>Open existing/new file
 * {k} {j}, {-} {+} - Up/Down 
 * {h} {l} - Left/Right 
 * {G} {gg} - Start/End of Document
-* {^} {$} - Start/End of Line
+* {0} {^} {$} - Start/End of Line
+* {]}{m} {[}{m} - Next/Previous method
 
-Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X, :+X, :-X
+Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X
 
 ---
 
@@ -155,6 +166,7 @@ Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X, :+X, :-X
 * {e} {E} - End, END
 * {#} {✱} - Same Word
 * {⦃} {⦄} - Paragraphs
+* {(} {)} - Sentences
 
 ---
 
@@ -162,9 +174,10 @@ Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X, :+X, :-X
 #### Motions
 ### Moving Around
 
-* {f} {F} {t} {T} - Find
-* {t} {T} - Till
-* {s} - Vim sneak, 2 Characters 
+* {f} - Find
+* {t} - Till
+* {/}, {n} {N} - Search
+* {s}, {,} {;} - Vim sneak, 2 Characters 
 
 Note: Vim sneak is a plugin
 ---
@@ -179,7 +192,7 @@ Note: Vim sneak is a plugin
 ---
 
 # Normal Mode
-| Operators                          | Objects               |
+| Operators                          | Text Objects          |
 | ---------------------------------- | --------------------- |
 | {c} Change                         | {a} {i} a, in a       |
 | {d} Delete, dd - full row          | {w} {W} word/WORD     |
@@ -193,10 +206,14 @@ Delete 5 Words
 Y a Paragraph
 2 (lines) Yank 
 Ident inside Bracket
-
 ```
 
 Note: yy and dd for full rows
+
+---
+
+# More Text Objects
+* https://github.com/kana/Vim-textobj-user/wiki
 
 ---
 
@@ -213,7 +230,7 @@ Note: yy and dd for full rows
 
 ---
 
-# vim Plugins
+# Vim Plugins
 * Modular and installed by demend
 * Extend functionality
 * Efficiency can be monitored
@@ -223,7 +240,7 @@ Note: yy and dd for full rows
 
 ---
 
-# vim Plugins
+# Vim Plugins
 * NerdTree
 * FZF
 * CoC
