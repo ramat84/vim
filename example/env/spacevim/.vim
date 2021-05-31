@@ -1,1 +1,0 @@
-/home/spot/vim/env/spacevim/.SpaceVim

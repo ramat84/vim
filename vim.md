@@ -201,11 +201,7 @@ Note: Vim sneak is a plugin
 | {＜} {＞} Ident left/right         | {'} {"} Parenthesis   |
 
 ```
-[Count+Operator] [Motions/Objects]
-Delete 5 Words
-Y a Paragraph
-2 (lines) Yank 
-Ident inside Bracket
+
 ```
 
 Note: yy and dd for full rows
