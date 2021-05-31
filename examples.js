@@ -93,20 +93,20 @@ $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
 
 
 /***************************************************/
- "  ┍━━━┑                           "
- "  │ $ │ Go to the end of the line "
- "  ┕━━━┙                           "
+ "   ┍━━━┑                             "
+ "   │ $ │ Go to the end of the line   "
+ "   ┕━━━┙                             "
 
 /*  [2] Delete last comment */
- "   ┍━━━┑           ┍━━━┑       ┍━━━┑ "
- "   │ d │ Delete to │ 4 │ words │ b │ack "
- "   ┕━━━┙           ┕━━━┙       ┕━━━┙ "
+ "   ┍━━━┑           ┍━━━┑       ┍━━━┑      "
+ "   │ d │ Delete to │ 4 │ words │ b │ack   "
+ "   ┕━━━┙           ┕━━━┙       ┕━━━┙      "
 /*                 .----.
  *           ------| OR |------  
  *                 '----'        */
- "   ┍━━━┑           ┍━━━┑        ┍━━━┑┍━━━┑ "
- "   │ d │ Delete to │ 2 │ second │ F ││ / │ Found previous Slash sign "
- "   ┕━━━┙           ┕━━━┙        ┕━━━┙┕━━━┙ "
+ "   ┍━━━┑           ┍━━━┑        ┍━━━┑┍━━━┑                             "
+ "   │ d │ Delete to │ 2 │ second │ F ││ / │ Found previous Slash sign   "
+ "   ┕━━━┙           ┕━━━┙        ┕━━━┙┕━━━┙                             "
 
 $(document).ready( () => Setup('plugins') ); // Delete This Comment 
 
