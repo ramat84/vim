@@ -4,16 +4,18 @@
  * .----------------------------------------.
  * | IMPORTANT: If you done something wrong:|
  * '----------------------------------------'
- *      ┍━━━━━┑
- *      │ ESC │ - Back to normal mode
- *      ┕━━━━━┙
- *      ┍━━━┑
- *      │ u │   - UNDO
- *      ┕━━━┙
- *      ┍━━━━━━┑┍━━━┑
- *      │ CTRL ││ r │ to REDO
- *      ┕━━━━━━┙┕━━━┙
  */
+
+ "      ┍━━━┑ ┍━━━┑         "
+ "      │ { │/│ } │         " // Jump between paragraphs
+ "      ┕━━━┙ ┕━━━┙         "
+ "      ┍━━━┑ ┍━━━━━┑       "
+ "      │ i │/│ ESC │       " // Insert / Normal mode
+ "      ┕━━━┙ ┕━━━━━┙       "
+ "      ┍━━━┑ ┍━━━━━━┑┍━━━┑ "
+ "      │ u │/│ CTRL ││ r │ " // Undo / Redo
+ "      ┕━━━┙ ┕━━━━━━┙┕━━━┙ "
+ 
 
 
 /* .--------.
@@ -21,20 +23,22 @@
  * '--------'
  */
 
- /***************************************************
-  *
-  *  [1] Change console.log LogMessage function! 
-  *       ┍━━━┑      ┍━━━┑     ┍━━━┑
-  *  USE: │ c │hange │ t │ill' │ ( │
-  *       ┕━━━┙      ┕━━━┙     ┕━━━┙
-  *
-  *  [2] Change the message to "Starting Now..."
-  *       ┍━━━┑      ┍━━━┑       ┍━━━┑
-  *  USE: │ c │hange │ i │inside │ " │
-  *       ┕━━━┙      ┕━━━┙       ┕━━━┙
-  *  Note: Can be used from the start of the line
-  *
-  */
+/***************************************************
+ *
+ *  [1] Change console.log LogMessage function! 
+ */
+  "   ┍━━━┑      ┍━━━┑     ┍━━━┑ "
+  "   │ c │hange │ t │ill' │ ( │ "
+  "   ┕━━━┙      ┕━━━┙     ┕━━━┙ "
+/*
+ *  [2] Change the message to "Starting Now..."
+ */ 
+  "   ┍━━━┑      ┍━━━┑       ┍━━━┑ "
+  "   │ c │hange │ i │inside │ ” │ "
+  "   ┕━━━┙      ┕━━━┙       ┕━━━┙ "
+/* 
+ * Note: Can be used from the start of the line
+ */
 
 console.log( "This is a log message" );
 
@@ -43,10 +47,10 @@ console.log( "This is a log message" );
  /***************************************************
   * 
   *  [3] Change the Second message to "Starting Now..."
-  *       ┍━━━┑
-  *  USE: │ . │ To repeate the last command
-  *       ┕━━━┙
   */
+  "   ┍━━━┑                             "
+  "   │ . │ To repeate the last command "
+  "   ┕━━━┙                             "
 
 LogMessage( "Change this message too!" );
 
@@ -55,10 +59,10 @@ LogMessage( "Change this message too!" );
  /***************************************************
   * 
   *  [4] Change the Second message to use the variable
-  *       ┍━━━┑      ┍━━━┑       ┍━━━┑
-  *  USE: │ c │hange │ i │inside │ ) │ Parenthesis
-  *       ┕━━━┙      ┕━━━┙       ┕━━━┙
   */
+  "   ┍━━━┑      ┍━━━┑       ┍━━━┑             "
+  "   │ c │hange │ i │inside │ ) │ Parenthesis "
+  "   ┕━━━┙      ┕━━━┙       ┕━━━┙             "
 
 var msg = "This is another message";
 LogMessage( "Change this message to a variable" );
@@ -71,13 +75,13 @@ LogMessage( "Change this message to a variable" );
  * '--------'
  */
 
- /***************************************************
-  *
-  *  [1] Delete the 5 duplicates
-  *       ┍━━━┑       ┍━━━┑┍━━━┑
-  *  USE: │ 5 │ Times │ d ││ d │elete Row(s)
-  *       ┕━━━┙       ┕━━━┙┕━━━┙
-  */ 
+/***************************************************
+ *
+ *  [1] Delete the 5 duplicates
+ */
+ "   ┍━━━┑       ┍━━━┑┍━━━┑             "
+ "   │ 5 │ Times │ d ││ d │elete Row(s) "
+ "   ┕━━━┙       ┕━━━┙┕━━━┙             "
 
 $(document).ready( () => Init('website') );
 $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
@@ -88,22 +92,21 @@ $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
 
 
 
- /***************************************************
-  *  ┍━━━┑
-  *  │ $ │ Go to the end of the line
-  *  ┕━━━┙
-  *
-  *  [2] Delete last comment  
-  *       ┍━━━┑           ┍━━━┑       ┍━━━┑
-  *  USE: │ d │ Delete to │ 4 │ words │ b │ack
-  *       ┕━━━┙           ┕━━━┙       ┕━━━┙
-  *                 .----.
-  *           ------| OR |------  
-  *                 '----'
-  *       ┍━━━┑           ┍━━━┑        ┍━━━┑┍━━━┑
-  *  USE: │ d │ Delete to │ 2 │ second │ F ││ / │ Found previous Slash sign
-  *       ┕━━━┙           ┕━━━┙        ┕━━━┙┕━━━┙
-  */ 
+/***************************************************/
+ "  ┍━━━┑                           "
+ "  │ $ │ Go to the end of the line "
+ "  ┕━━━┙                           "
+
+/*  [2] Delete last comment */
+ "   ┍━━━┑           ┍━━━┑       ┍━━━┑ "
+ "   │ d │ Delete to │ 4 │ words │ b │ack "
+ "   ┕━━━┙           ┕━━━┙       ┕━━━┙ "
+/*                 .----.
+ *           ------| OR |------  
+ *                 '----'        */
+ "   ┍━━━┑           ┍━━━┑        ┍━━━┑┍━━━┑ "
+ "   │ d │ Delete to │ 2 │ second │ F ││ / │ Found previous Slash sign "
+ "   ┕━━━┙           ┕━━━┙        ┕━━━┙┕━━━┙ "
 
 $(document).ready( () => Setup('plugins') ); // Delete This Comment 
 
