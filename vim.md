@@ -150,7 +150,7 @@ Note: Ask me how to quit Vim<br>Open existing/new file
 * {k} {j}, {-} {+} - Up/Down 
 * {h} {l} - Left/Right 
 * {G} {gg} - Start/End of Document
-* {0} {^} {$} - Start/End of Line
+* {0} {^}/{_} {$} - Start/End of Line
 * {]}{m} {[}{m} - Next/Previous method
 
 Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X
@@ -262,7 +262,8 @@ Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autoco
 
 ---
 
-# Terminal
+# More
+* Vimium C
 * Oh My Bash/ZSH
 * lsd
 
