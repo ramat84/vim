@@ -5,8 +5,16 @@
 #### 937.1337
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into Vim and learn how to work with it<BR>Vim Noob
+Note: In this lecture we'll take a technical dive into Vim and learn how to work with it<BR>
 
+---
+
+# Bare with me
+* My last lecture: JLC in 2005
+* I used kate editor
+* I Switched to Terminal half a year ago
+
+![RC](vim/jlc.jpg)
 ---
 
 # 🖎 Notes
@@ -64,7 +72,7 @@ Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeata
 * Game: https://Vim-adventures.com/
 * Youtube: Learning Vim in a Week 
 * Google: Vim for [MY LANGUAGE]
-* Cheat sheets
+* Search for Cheat sheets or Vim wallpapers
 
 Notes: You can find links to the cheatsheets in the presentation
 

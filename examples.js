@@ -5,7 +5,6 @@
  * | IMPORTANT: If you done something wrong:|
  * '----------------------------------------'
  */
-
  "      ┍━━━┑ ┍━━━┑         "
  "      │ { │/│ } │         " // Jump between paragraphs
  "      ┕━━━┙ ┕━━━┙         "
@@ -18,24 +17,21 @@
  
 
 
-/* .--------.
- * | CHANGE |
- * '--------'
- */
-
-/***************************************************
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                            CHANGE
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  *
  *  [1] Change console.log LogMessage function! 
  */
-  "   ┍━━━┑      ┍━━━┑     ┍━━━┑ "
-  "   │ c │hange │ t │ill' │ ( │ "
-  "   ┕━━━┙      ┕━━━┙     ┕━━━┙ "
+ "   ┍━━━┑      ┍━━━┑     ┍━━━┑ "
+ "   │ c │hange │ t │ill' │ ( │ "
+ "   ┕━━━┙      ┕━━━┙     ┕━━━┙ "
 /*
  *  [2] Change the message to "Starting Now..."
  */ 
-  "   ┍━━━┑      ┍━━━┑       ┍━━━┑ "
-  "   │ c │hange │ i │inside │ ” │ "
-  "   ┕━━━┙      ┕━━━┙       ┕━━━┙ "
+ "   ┍━━━┑      ┍━━━┑       ┍━━━┑ "
+ "   │ c │hange │ i │inside │ ” │ "
+ "   ┕━━━┙      ┕━━━┙       ┕━━━┙ "
 /* 
  * Note: Can be used from the start of the line
  */
@@ -44,25 +40,25 @@ console.log( "This is a log message" );
 
 
 
- /***************************************************
-  * 
-  *  [3] Change the Second message to "Starting Now..."
-  */
-  "   ┍━━━┑                             "
-  "   │ . │ To repeate the last command "
-  "   ┕━━━┙                             "
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * 
+ *  [3] Change the Second message to "Starting Now..."
+ */
+ "   ┍━━━┑                             "
+ "   │ . │ To repeate the last command "
+ "   ┕━━━┙                             "
 
 LogMessage( "Change this message too!" );
 
 
 
- /***************************************************
-  * 
-  *  [4] Change the Second message to use the variable
-  */
-  "   ┍━━━┑      ┍━━━┑       ┍━━━┑             "
-  "   │ c │hange │ i │inside │ ) │ Parenthesis "
-  "   ┕━━━┙      ┕━━━┙       ┕━━━┙             "
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * 
+ *  [4] Change the Second message to use the variable
+ */
+ "   ┍━━━┑      ┍━━━┑       ┍━━━┑             "
+ "   │ c │hange │ i │inside │ ) │ Parenthesis "
+ "   ┕━━━┙      ┕━━━┙       ┕━━━┙             "
 
 var msg = "This is another message";
 LogMessage( "Change this message to a variable" );
@@ -70,12 +66,10 @@ LogMessage( "Change this message to a variable" );
 
 
 
-/* .--------.
- * | DELETE |
- * '--------'
- */
-
-/***************************************************
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                            DELETE 
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ *
  *
  *  [1] Delete the 5 duplicates
  */
@@ -91,8 +85,8 @@ $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
 $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
 
 
-
-/***************************************************/
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+ 
  "   ┍━━━┑                             "
  "   │ $ │ Go to the end of the line   "
  "   ┕━━━┙                             "
