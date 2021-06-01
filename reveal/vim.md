@@ -5,8 +5,16 @@
 #### 937.1337
 ![RC](vim/mcvim.png)
 
-Note: In this lecture we'll take a technical dive into Vim and learn how to work with it<BR>Vim Noob
+Note: In this lecture we'll take a technical dive into Vim and learn how to work with it<BR>
 
+---
+
+# Bare with me
+* My last lecture: JLC in 2005
+* I used kate editor
+* I Switched to Terminal half a year ago
+
+![RC](vim/jlc.jpg)
 ---
 
 # 🖎 Notes
@@ -53,6 +61,7 @@ Note: vim -U NONE examples/files/jquery.js
 * 🚪 Can be accessed remotely with ease
 * ➿ Actions are repeatable
 * 🕔 Make work more efficient
+* ⚙ Vim mode exists in most modern IDEs
 
 Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
 
@@ -63,7 +72,7 @@ Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeata
 * Game: https://Vim-adventures.com/
 * Youtube: Learning Vim in a Week 
 * Google: Vim for [MY LANGUAGE]
-* Cheat sheets
+* Search for Cheat sheets or Vim wallpapers
 
 Notes: You can find links to the cheatsheets in the presentation
 
@@ -111,12 +120,11 @@ Note: In windows can be installed from build in linux subsystem<br>For android u
 
 ---
 
-# 🗔 Windows 
-* Tabs - Instances
-* Buffers - Tabs
-* Windows - Panes
-
-Note: Names are confusing 
+# My UI tour
+* Tmux on top
+* Buffers line
+* Code Area, Signs, Numbers, Files, Tags
+* Vim Bottom
 
 ---
 
@@ -149,7 +157,7 @@ Note: Ask me how to quit Vim<br>Open existing/new file
 * <kbd>k</kbd> <kbd>j</kbd>, <kbd>-</kbd> <kbd>+</kbd> - Up/Down 
 * <kbd>h</kbd> <kbd>l</kbd> - Left/Right 
 * <kbd>G</kbd> <kbd>gg</kbd> - Start/End of Document
-* <kbd>0</kbd> <kbd>^</kbd> <kbd>$</kbd> - Start/End of Line
+* <kbd>0</kbd> <kbd>^</kbd>/<kbd>_</kbd> <kbd>$</kbd> - Start/End of Line
 * <kbd>]</kbd><kbd>m</kbd> <kbd>[</kbd><kbd>m</kbd> - Next/Previous method
 
 Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X
@@ -200,19 +208,13 @@ Note: Vim sneak is a plugin
 | <kbd>＜</kbd> <kbd>＞</kbd> Ident left/right         | <kbd>'</kbd> <kbd>"</kbd> Parenthesis   |
 
 ```
-[Count+Operator] [Motions/Objects]
-Delete 5 Words
-Y a Paragraph
-2 (lines) Yank 
-Ident inside Bracket
+https://github.com/ramat84
+Open vim => examples.js
+
+More objects: https://github.com/kana/Vim-textobj-user/wiki
 ```
 
 Note: yy and dd for full rows
-
----
-
-# More Text Objects
-* https://github.com/kana/Vim-textobj-user/wiki
 
 ---
 
@@ -261,7 +263,8 @@ Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autoco
 
 ---
 
-# Terminal
+# More
+* Vimium C
 * Oh My Bash/ZSH
 * lsd
 

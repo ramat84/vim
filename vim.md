@@ -120,12 +120,11 @@ Note: In windows can be installed from build in linux subsystem<br>For android u
 
 ---
 
-# 🗔 Windows 
-* Tabs - Instances
-* Buffers - Tabs
-* Windows - Panes
-
-Note: Names are confusing 
+# My UI tour
+* Tmux on top
+* Buffers line
+* Code Area, Signs, Numbers, Files, Tags
+* Vim Bottom
 
 ---
 
@@ -209,15 +208,13 @@ Note: Vim sneak is a plugin
 | {＜} {＞} Ident left/right         | {'} {"} Parenthesis   |
 
 ```
+https://github.com/ramat84
+Open vim => examples.js
 
+More objects: https://github.com/kana/Vim-textobj-user/wiki
 ```
 
 Note: yy and dd for full rows
-
----
-
-# More Text Objects
-* https://github.com/kana/Vim-textobj-user/wiki
 
 ---
 
@@ -226,11 +223,10 @@ Note: yy and dd for full rows
 * {@} @X - Repeat a macro
 * {.} - Macro repeater plugin 
 
----
-
-# Key mappings
-* Leader key
-* Mapping a key 
+```
+https://github.com/ramat84
+Open vim => macros.js
+```
 
 ---
 
@@ -248,7 +244,7 @@ Note: yy and dd for full rows
 * NerdTree
 * FZF
 * CoC
-Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autocomplete, Jump to definition,History, Grep
+Note: Quick, NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autocomplete, Jump to definition,History, Grep
 
 ---
 
@@ -260,18 +256,8 @@ Note: NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autoco
 
 ---
 
-# Database
-* MitzaSQL
-
-
----
-
-# More
-* Vimium C
-* Oh My Bash/ZSH
-* lsd
-
-Note: bm Bookmarks
+# Vimium C
+* Extension to use Vim key in your browser
 
 ---
 

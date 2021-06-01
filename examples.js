@@ -105,3 +105,48 @@ $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
 $(document).ready( () => Setup('plugins') ); // Delete This Comment 
 
 
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                            YANK (copy)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ *
+ * [1] Copy the code inside of the function
+ */
+
+ "   ┍━━━┑       ┍━━━┑      ┍━━━┑         "
+ "   │ y │ Yank  │ i │nside │ { │ Braces  "
+ "   ┕━━━┙       ┕━━━┙      ┕━━━┙         "
+ "   ┍━━━┑       "
+ "   │ p │ aste  "
+ "   ┕━━━┙       "
+
+function a() {
+    DoSomeStuff();
+    iDoMoreStuff();
+}
+
+function b() { // Should do the same as function a
+    DoSomeStuff();
+    iDoMoreStuff();
+
+}
+
+
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                                Fix identetion
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ *
+ * [1] Fix identetion for 3 rows
+ */
+
+ "   ┍━━━┑       ┍━━━┑┍━━━┑                       "
+ "   │ 3 │ Times │ < ││ < │ Ident Rows Backwards  "
+ "   ┕━━━┙       ┕━━━┙┕━━━┙                       "
+
+function a() {
+        DoSomeStuff();
+        iDoMoreStuff();
+        DoSomeStuff();
+    iDoMoreStuff();
+}
+
+
