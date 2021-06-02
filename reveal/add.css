@@ -67,6 +67,7 @@ code {
 
 body {
     box-shadow: inset 0 90px #313131,inset 0 -90px black;
+    background: #1c1e20 !important;
 }
 
 body::after {
@@ -80,6 +81,15 @@ body::after {
     opacity: 0.05;
     z-index: -1;
     box-shadow: inset 0 0 250px 60px black;
+}
+
+@media (max-width: 800px) {
+    transform: scale(0.5);
+    width: 200%;
+    position: fixed;
+    left: -50%;
+    top: -50%;
+    height: 200%;
 }
 
 h1[id] {

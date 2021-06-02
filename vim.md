@@ -2,36 +2,29 @@
 
 # LoVim . IT!
 ### Vim | Ram Matityahu
-#### 937.1337
+#### v1.337
 ![RC](vim/mcvim.png)
+##### Vim is a editor that can be
+##### extended to work as a IDE
 
-Note: In this lecture we'll take a technical dive into Vim and learn how to work with it<BR>
-
----
-
-# Bare with me
-* My last lecture: JLC in 2005
-* I used kate editor
-* I Switched to Terminal half a year ago
+Note: In this lecture we'll take a technical dive into Vim and learn how to work with it\
+Bare with me\
+My last lecture: JLC in 2005\
+I used kate editor\
+I Switched to Terminal half a year ago
 
 ![RC](vim/jlc.jpg)
 ---
 
-# 🖎 Notes
-## All sources are available here
-* github.com/ramat84/Vim (Vim.md)
-* github.com/ramat84/config
-
-Note: Presentation available, Created with Vim<br>Configuration for NVim, can be used in Vim<br>Custom shortcuts
-
----
-
-# Versions
+# History
 * 👴 VI - Really Retro (1976)
 * 🤯 Vim - VI Explosion (1991)
 * 🧔 NeoVim - Vim For Hipsters (2014)
 
-Note: A bit of history<br>VI - original, simple, not extendable<br>Vim - Extendable with plugins, Much more advanced<br>NVim - improved Vim, does everything Vim does, spitted to make Vim development more mainstream and not block development.
+Note: A bit of history\
+VI - original, simple, not extendable\
+Vim - Extendable with plugins, Much more advanced\
+NVim - improved Vim, does everything Vim does, spitted to make Vim development more mainstream and not block development.
 
 ---
 
@@ -45,7 +38,7 @@ Note: A bit of history<br>VI - original, simple, not extendable<br>Vim - Extenda
 vim -u NONE
 ```
 
-Note: vim -U NONE examples/files/jquery.js
+Note: 'vim' -U NONE jquery.js
 
 ---
 
@@ -63,7 +56,10 @@ Note: vim -U NONE examples/files/jquery.js
 * 🕔 Make work more efficient
 * ⚙ Vim mode exists in most modern IDEs
 
-Note: Loads Quickly<br>Runs Quickly<br>Don't wait for anything<br>Can do repeatable stuff multiple times fast
+Note: Loads Quickly\
+Runs Quickly\
+Don't wait for anything\
+Can do repeatable stuff multiple times fast
 
 ---
 
@@ -101,7 +97,9 @@ Note: Vim is nothing like you ever used before
 * Tabs
 * Split Windows
 
-Note: tmux ls<br>tmux attach -t NAME<br>Copy & Paste, No example
+Note: tmux ls\
+tmux attach -t NAME\
+Copy & Paste, No example
 
 ---
 
@@ -116,7 +114,9 @@ On mac use iTerm2!
 🎨 And setup the colors: https://jdhao.github.io/2018/10/19/tmux_NVim_true_color/
 ```
 
-Note: In windows can be installed from build in linux subsystem<br>For android use hackers keyboard<br>Fix the colors
+Note: In windows can be installed from build in linux subsystem\
+For android use hackers keyboard\
+Fix the colors
 
 ---
 
@@ -129,24 +129,20 @@ Note: In windows can be installed from build in linux subsystem<br>For android u
 ---
 
 # Basic Work
-* {i} {a} - Insert mode
-* {ESC} - Normal mode
 * {:} - Command mode
 * {q} - Quit
 * {w} - Write  (Save/Save as)
+
+* {i} {a} - Insert mode
+* {ESC} - Normal mode
 
 ```
 Add to ~/.vimrc for issues with arrow keys in insert mode:
 set nocompatible
 ```
 
-Note: Ask me how to quit Vim<br>Open existing/new file
-
----
-
-# Sessions
-* Save a session
-* Load a sessiion
+Note: Ask me how to quit Vim\
+Open existing/new file
 
 ---
 
@@ -154,13 +150,14 @@ Note: Ask me how to quit Vim<br>Open existing/new file
 #### Motions
 ### Moving Around
 
+* {gg} {G} - Start/End of Document
 * {k} {j}, {-} {+} - Up/Down 
 * {h} {l} - Left/Right 
-* {G} {gg} - Start/End of Document
 * {0} {^}/{_} {$} - Start/End of Line
 * {]}{m} {[}{m} - Next/Previous method
 
-Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X
+Note: Try not to use h/l, I won't go over Visual mode\
+X+, X-, :X
 
 ---
 
@@ -187,14 +184,6 @@ Note: Try not to use h/l, I won't go over Visual mode<br>X+, X-, :X
 * {s}, {,} {;} - Vim sneak, 2 Characters 
 
 Note: Vim sneak is a plugin
----
-
-# Normal Mode
-## Go to Insert mode
-
-* {i} {a} - After/Before Current cursor
-* {I} {A} - Beginning/End Of line
-* {o} {O} - Previous/Next Line
 
 ---
 
@@ -244,7 +233,8 @@ Open vim => macros.js
 * NerdTree
 * FZF
 * CoC
-Note: Quick, NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax Autocomplete, Jump to definition,History, Grep
+Note: Quick, NerdTree: File Manager, Bookmarks, File Manipulation\
+Coc: Syntax Autocomplete, Jump to definition,History, Grep
 
 ---
 
@@ -261,7 +251,18 @@ Note: Quick, NerdTree: File Manager, Bookmarks, File Manipulation<BR>Coc: Syntax
 
 ---
 
+# 🖎 Notes
+## All sources are available here
+* github.com/ramat84/Vim (Vim.md)
+* github.com/ramat84/config
+
+Note: Presentation available, Created with Vim\
+Configuration for NVim, can be used in Vim\
+Custom shortcuts
+
+---
+
 # Thanks
-![RC](vim/vcita_logo.png)
+![RC](vim/vcita_logo_300.png)
 
 

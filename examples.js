@@ -57,7 +57,7 @@ LogMessage( "Change this message too!" );
  *  [4] Change the Second message to use the variable
  */
  "   ┍━━━┑      ┍━━━┑       ┍━━━┑             "
- "   │ c │hange │ i │inside │ ) │ Parenthesis "
+ "   │ c │hange │ a │inside │ ) │ Parenthesis "
  "   ┕━━━┙      ┕━━━┙       ┕━━━┙             "
 
 var msg = "This is another message";
@@ -76,6 +76,12 @@ LogMessage( "Change this message to a variable" );
  "   ┍━━━┑       ┍━━━┑┍━━━┑             "
  "   │ 5 │ Times │ d ││ d │elete Row(s) "
  "   ┕━━━┙       ┕━━━┙┕━━━┙             "
+/*                 .----.
+ *           ------| OR |------  
+ *                 '----'        */
+ "   ┍━━━┑        ┍━━━┑                                 "
+ "   │ d │ Delete │ } │ to the end of the paragraph     "
+ "   ┕━━━┙        ┕━━━┙                                 "
 
 $(document).ready( () => Init('website') );
 $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
@@ -98,9 +104,9 @@ $(document).ready( () => Init('website') ); // <-- Uneeded duplicate
 /*                 .----.
  *           ------| OR |------  
  *                 '----'        */
- "   ┍━━━┑           ┍━━━┑        ┍━━━┑┍━━━┑                             "
- "   │ d │ Delete to │ 2 │ second │ F ││ / │ Found previous Slash sign   "
- "   ┕━━━┙           ┕━━━┙        ┕━━━┙┕━━━┙                             "
+ "   ┍━━━┑           ┍━━━┑┍━━━┑                                     "
+ "   │ d │ Delete to │ T ││ ; │ To Found previous semicolumn sign   "
+ "   ┕━━━┙           ┕━━━┙┕━━━┙                                     "
 
 $(document).ready( () => Setup('plugins') ); // Delete This Comment 
 
@@ -121,13 +127,10 @@ $(document).ready( () => Setup('plugins') ); // Delete This Comment
 
 function a() {
     DoSomeStuff();
-    iDoMoreStuff();
+    DoMoreStuff();
 }
 
 function b() { // Should do the same as function a
-    DoSomeStuff();
-    iDoMoreStuff();
-
 }
 
 
