@@ -16,7 +16,7 @@ I Switched to Terminal half a year ago
 ![RC](vim/jlc.jpg)
 ---
 
-# Versions
+# History
 * 👴 VI - Really Retro (1976)
 * 🤯 Vim - VI Explosion (1991)
 * 🧔 NeoVim - Vim For Hipsters (2014)
@@ -38,7 +38,7 @@ NVim - improved Vim, does everything Vim does, spitted to make Vim development m
 vim -u NONE
 ```
 
-Note: Vim -U NONE examples/files/jquery.js
+Note: 'vim' -U NONE jquery.js
 
 ---
 
@@ -129,11 +129,12 @@ Fix the colors
 ---
 
 # Basic Work
-* <kbd>i</kbd> <kbd>a</kbd> - Insert mode
-* <kbd>ESC</kbd> - Normal mode
 * <kbd>:</kbd> - Command mode
 * <kbd>q</kbd> - Quit
 * <kbd>w</kbd> - Write  (Save/Save as)
+
+* <kbd>i</kbd> <kbd>a</kbd> - Insert mode
+* <kbd>ESC</kbd> - Normal mode
 
 ```
 Add to ~/.vimrc for issues with arrow keys in insert mode:
@@ -145,19 +146,13 @@ Open existing/new file
 
 ---
 
-# Sessions
-* Save a session
-* Load a sessiion
-
----
-
 # Normal Mode
 #### Motions
 ### Moving Around
 
+* <kbd>gg</kbd> <kbd>G</kbd> - Start/End of Document
 * <kbd>k</kbd> <kbd>j</kbd>, <kbd>-</kbd> <kbd>+</kbd> - Up/Down 
 * <kbd>h</kbd> <kbd>l</kbd> - Left/Right 
-* <kbd>G</kbd> <kbd>gg</kbd> - Start/End of Document
 * <kbd>0</kbd> <kbd>^</kbd>/<kbd>_</kbd> <kbd>$</kbd> - Start/End of Line
 * <kbd>]</kbd><kbd>m</kbd> <kbd>[</kbd><kbd>m</kbd> - Next/Previous method
 
@@ -189,14 +184,6 @@ X+, X-, :X
 * <kbd>s</kbd>, <kbd>,</kbd> <kbd>;</kbd> - Vim sneak, 2 Characters 
 
 Note: Vim sneak is a plugin
----
-
-# Normal Mode
-## Go to Insert mode
-
-* <kbd>i</kbd> <kbd>a</kbd> - After/Before Current cursor
-* <kbd>I</kbd> <kbd>A</kbd> - Beginning/End Of line
-* <kbd>o</kbd> <kbd>O</kbd> - Previous/Next Line
 
 ---
 

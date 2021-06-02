@@ -170,7 +170,6 @@ X+, X-, :X
 * {e} {E} - End, END
 * {#} {✱} - Same Word
 * {⦃} {⦄} - Paragraphs
-* {(} {)} - Sentences
 
 ---
 
@@ -178,12 +177,13 @@ X+, X-, :X
 #### Motions
 ### Moving Around
 
-* {f} - Find
+* {f} , {,} {;} - Find
 * {t} - Till
 * {/}, {n} {N} - Search
 * {s}, {,} {;} - Vim sneak, 2 Characters 
 
-Note: Vim sneak is a plugin
+Note: Find/Till will search the current line, there's a plugin for multi line search\
+Vim sneak is a plugin
 
 ---
 

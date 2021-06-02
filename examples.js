@@ -56,9 +56,9 @@ LogMessage( "Change this message too!" );
  * 
  *  [4] Change the Second message to use the variable
  */
- "   ┍━━━┑      ┍━━━┑       ┍━━━┑             "
- "   │ c │hange │ a │inside │ ) │ Parenthesis "
- "   ┕━━━┙      ┕━━━┙       ┕━━━┙             "
+ "   ┍━━━┑      ┍━━━┑      ┍━━━┑             "
+ "   │ c │hange │ i │nside │ ) │ Parenthesis "
+ "   ┕━━━┙      ┕━━━┙      ┕━━━┙             "
 
 var msg = "This is another message";
 LogMessage( "Change this message to a variable" );
@@ -127,7 +127,7 @@ $(document).ready( () => Setup('plugins') ); // Delete This Comment
 
 function a() {
     DoSomeStuff();
-    DoMoreStuff();
+    iDoMoreStuff();
 }
 
 function b() { // Should do the same as function a

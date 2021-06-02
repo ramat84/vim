@@ -37,7 +37,7 @@
  "   ┕━━━┙ ┕━━━┙                "
 
  "   ┍━━━┑┍━━━┑                    |    |   ┍━━━┑                              "
- "   │ @ ││ @ │ Repeat recording   | OR |   │ . │ With macro repeater plugin   "
+ "   │ @ ││ q │ Repeat recording   | OR |   │ . │ With macro repeater plugin   "
  "   ┕━━━┙┕━━━┙                    |    |   ┕━━━┙                              "
  
 
