@@ -13,7 +13,6 @@ My last lecture: JLC in 2005\
 I used kate editor\
 I Switched to Terminal half a year ago
 
-![RC](vim/jlc.jpg)
 ---
 
 # History
