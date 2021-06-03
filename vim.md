@@ -13,7 +13,6 @@ My last lecture: JLC in 2005\
 I used kate editor\
 I Switched to Terminal half a year ago
 
-![RC](vim/jlc.jpg)
 ---
 
 # History
@@ -155,6 +154,7 @@ Open existing/new file
 * {h} {l} - Left/Right 
 * {0} {^}/{_} {$} - Start/End of Line
 * {]}{m} {[}{m} - Next/Previous method
+* {%} - Go to the opening/closing bracket 
 
 Note: Try not to use h/l, I won't go over Visual mode\
 X+, X-, :X
@@ -224,8 +224,11 @@ Open vim => macros.js
 * Extend functionality
 * Efficiency can be monitored
 * "Marketplace"
-* Installation
-* Removal
+* My plugins really quick
+
+```
+https://github.com/junegunn/vim-plug
+```
 
 ---
 

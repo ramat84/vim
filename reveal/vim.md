@@ -155,6 +155,7 @@ Open existing/new file
 * <kbd>h</kbd> <kbd>l</kbd> - Left/Right 
 * <kbd>0</kbd> <kbd>^</kbd>/<kbd>_</kbd> <kbd>$</kbd> - Start/End of Line
 * <kbd>]</kbd><kbd>m</kbd> <kbd>[</kbd><kbd>m</kbd> - Next/Previous method
+* <kbd>%</kbd> - Go to the opening/closing bracket 
 
 Note: Try not to use h/l, I won't go over Visual mode\
 X+, X-, :X
@@ -170,7 +171,6 @@ X+, X-, :X
 * <kbd>e</kbd> <kbd>E</kbd> - End, END
 * <kbd>#</kbd> <kbd>✱</kbd> - Same Word
 * <kbd>⦃</kbd> <kbd>⦄</kbd> - Paragraphs
-* <kbd>(</kbd> <kbd>)</kbd> - Sentences
 
 ---
 
@@ -178,12 +178,13 @@ X+, X-, :X
 #### Motions
 ### Moving Around
 
-* <kbd>f</kbd> - Find
+* <kbd>f</kbd> , <kbd>,</kbd> <kbd>;</kbd> - Find
 * <kbd>t</kbd> - Till
 * <kbd>/</kbd>, <kbd>n</kbd> <kbd>N</kbd> - Search
 * <kbd>s</kbd>, <kbd>,</kbd> <kbd>;</kbd> - Vim sneak, 2 Characters 
 
-Note: Vim sneak is a plugin
+Note: Find/Till will search the current line, there's a plugin for multi line search\
+Vim sneak is a plugin
 
 ---
 
@@ -224,8 +225,11 @@ Open vim => macros.js
 * Extend functionality
 * Efficiency can be monitored
 * "Marketplace"
-* Installation
-* Removal
+* My plugins really quick
+
+```
+https://github.com/junegunn/vim-plug
+```
 
 ---
 
